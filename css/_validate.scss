@@ -515,11 +515,19 @@ input[type=number] {
 .color--red{
   color: red;
 }
+.color--gray{
+  color: $color-extra;
+}
 select {
   -webkit-appearance: none;
   -moz-appearance: none;
   text-indent: 1px;
   text-overflow: '';
+}
+.disabled{
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  pointer-events: none;
 }
 .positionLeft50{
   position: absolute;
@@ -604,6 +612,9 @@ button:focus {
   display: block;
   margin-top: 2rem;
   width: 100%;
+  &:hover{
+    color: #fff;
+  }
   &.disabled{
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
@@ -625,6 +636,11 @@ button:focus {
 .form-group{
   margin-bottom: 1.6rem;
   position: relative;
+  .label--big{
+    font-size: 1.1rem;
+    color: $color-extra;
+    margin-bottom: 0.8rem;
+  }
 
   .wrap_input{
     color: $color-main;
@@ -645,13 +661,18 @@ button:focus {
       padding: 0;
       line-height: 5rem;
       height: 100% !important;
+      color: $color-main;
+      &[data-color=color--gray]{
+        color: $color-extra;
+      }
     }
   }
   .input-error{
     color: red;
     font-size: 1.3rem;
     text-align: left;
-    margin-top: 0.5rem;
+    margin-top: 0.8rem;
+    display: none;
   }
   &.hasLabel{
     padding-top: 0.8rem;
@@ -754,12 +775,12 @@ button:focus {
   &.form-group-select{
     .wrap_input{
       padding: 0 4rem 0 0;
-      background-image: url("../images/icon_arr_bottom_green.svg");
+      background-image: url("../images/icon_arr_bottom_gray.svg");
       background-repeat: no-repeat;
-      background-position: right 10px center;
+      background-position: right 1.1rem center;
       select{
         padding-left: 1.8rem;
-        padding-right: 1.8rem;
+        padding-right: 4rem;
         position: absolute;
         width: 100%;
         height: calc(100% - 0.8rem) !important;
@@ -775,7 +796,20 @@ button:focus {
   }
   &.form-group-money{
     .wrap_input{
-
+      .form-control{
+        font-size: 2.4rem;
+        font-weight: 600;
+        line-height: 1.4;
+        &::-webkit-input-placeholder {
+          color: #DEE3E7;
+        }
+        &:-ms-input-placeholder {
+          color: #DEE3E7;
+        }
+        &::placeholder {
+          color: #DEE3E7;
+        }
+      }
     }
     .btn_max{
       display: block;
@@ -785,6 +819,7 @@ button:focus {
       padding: 0.6rem 0.8rem;
       position: absolute;
       color: $color-main;
+      font-weight: 600;
       right: 0.8rem;
       top: 1.9rem;
     }
@@ -796,8 +831,36 @@ button:focus {
         }
       }
       .icon_close{
-        right: 6.9rem;
+        right: 6rem;
       }
+    }
+  }
+  &.form-group--disable{
+    .wrap_input{
+      background-color: #F6F7F8;
+      border: 1px solid #DEE3E7;
+      color: $color-extra;
+      background-image: url("../images/icon_edit_dissable.svg");
+      background-repeat: no-repeat;
+      background-position: center right 1.6rem;
+      padding-right: 3.8rem;
+      .form-control{
+        color: $color-extra;
+        pointer-events: none;
+      }
+    }
+  }
+
+
+  &.form-group--error{
+    .wrap_input{
+      border: 1px solid red;
+      .form-control{
+
+      }
+    }
+    .input-error{
+      display: block;
     }
   }
 }
@@ -833,6 +896,160 @@ button:focus {
     font-weight: 600;
     margin: 2.2rem auto 0;
   }
+}
+.group-cb {
+  input {
+    + {
+      label {
+        position: relative;
+        display: block;
+        cursor: pointer;
+        font-size: 1.3rem;
+        padding-left: 2.8rem;
+        &:before {
+          content: "";
+          display: inline-block;
+          width: 2rem;
+          height: 2rem;
+          vertical-align: bottom;
+          color: transparent;
+          transition: 0.2s;
+          background: #F6F7F8;
+          border-radius: 50%;
+          position: absolute;
+          z-index: 1;
+          left: 0;
+          top: 0;
+        }
+        &::after{
+          content: '';
+          display: block;
+          width: 1.2rem;
+          height: 1.2rem;
+          background: #F6F7F8;
+          position: absolute;
+          top: 0.4rem;
+          left: 0.4rem;
+          z-index: 2;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          border-radius: 50%;
+          transition: 0.2s;
+        }
+        &:active {
+          &:before {
+            transform: scale(0);
+          }
+        }
+      }
+    }
+    display: none;
+    &:checked {
+      + {
+        label {
+          &:before {
+
+          }
+          &::after{
+            background: $color-green;
+            transition: 0.2s;
+          }
+        }
+      }
+      &:disabled {
+        + {
+          label {
+            &:before {
+              transform: scale(1);
+              background-color: #bfb;
+              border-color: #bfb;
+            }
+          }
+        }
+      }
+    }
+    &:disabled {
+      + {
+        label {
+          &:before {
+            transform: scale(1);
+            border-color: #aaa;
+          }
+        }
+      }
+    }
+  }
+
+}
+.group-cb--square {
+  input {
+    + {
+      label {
+        position: relative;
+        display: block;
+        cursor: pointer;
+        font-size: 1.3rem;
+        padding-left: 2.8rem;
+        &:before {
+          content: "";
+          display: inline-block;
+          width: 2rem;
+          height: 2rem;
+          vertical-align: bottom;
+          color: transparent;
+          transition: 0.2s;
+          -webkit-border-radius: 3px;
+          -moz-border-radius: 3px;
+          border-radius: 3px;
+          background: #DEE3E7;
+          position: absolute;
+          z-index: 1;
+          left: 0;
+          top: 0;
+        }
+        &:active {
+          &:before {
+            transform: scale(0);
+          }
+        }
+      }
+    }
+    display: none;
+    &:checked {
+      + {
+        label {
+          &:before {
+            background: #6CE2D1;
+          }
+          &::after{
+            
+          }
+        }
+      }
+      &:disabled {
+        + {
+          label {
+            &:before {
+              transform: scale(1);
+              background-color: #bfb;
+              border-color: #bfb;
+            }
+          }
+        }
+      }
+    }
+    &:disabled {
+      + {
+        label {
+          &:before {
+            transform: scale(1);
+            border-color: #aaa;
+          }
+        }
+      }
+    }
+  }
+
 }
 .opt_note {
   .item {

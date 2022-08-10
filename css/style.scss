@@ -1209,11 +1209,196 @@
   .box_info_loan{
     .box_wrap{
       .section-title{
+        p{
 
+        }
+        .sub{
+          font-size: 1.1rem;
+          text-align: center;
+          display: block;
+          color: $color-extra;
+          font-weight: 400;
+        }
+      }
+      .acc_verify{
+        margin-bottom: 1.2rem;
+        padding: 1.8rem 1.6rem;
+        background: #FFFFFF;
+        border: 1px solid #E8EBEE;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        .group_txt{
+          .txt-p{
+            font-size: 1.5rem;
+            font-weight: 700;
+          }
+          .txt-span{
+            display: block;
+            font-size: 1.3rem;
+            margin-top: 0.5rem;
+          }
+        }
+        .go_verify{
+          color: #fff;
+          background: $color-green;
+          border-radius: 50px;
+          font-size: 1.1rem;
+          font-weight: 600;
+          padding: 0.8rem 1.5rem;
+          white-space: nowrap;
+          margin-top: 1rem;
+          margin-left: 2rem;
+        }
       }
       .loan_detail{
+        background: #FFFFFF;
+        border: 1px solid #E8EBEE;
+        border-radius: 10px;
+        padding: 1.8rem 1.6rem;
+        .item{
+          font-size: 1.5rem;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 1.2rem 0;
+          border-bottom: 1px solid #E8EBEE;;
+          &-title{
+
+          }
+          &-value{
+
+          }
+          &:first-of-type{
+            padding-top: 0;
+          }
+          &:last-of-type{
+            border-bottom: 0;
+            padding-bottom: 0;
+          }
+        }
+      }
+      .loan_checkbox{
 
       }
+      .loan_btn{
+        margin-top: 3rem;
+        .btn_send{
+
+        }
+        .btn_save{
+          display: block;
+          color: $color-green;
+          font-size: 1.5rem;
+          font-weight: 700;
+          margin: 1.8rem auto 0;
+          text-align: center;
+          width: fit-content;
+        }
+      }
+    }
+  }
+  .box_loan_complete{
+    padding-bottom: 3rem;
+    .box_wrap{
+      .section-title{
+        margin-bottom: 0;
+        p{
+
+        }
+        .sub{
+          font-size: 1.1rem;
+          text-align: center;
+          display: block;
+          color: $color-extra;
+          font-weight: 400;
+        }
+      }
+      .font_wrap{
+        .p_title{
+          font-size: 1.5rem;
+          font-weight: 900;
+          margin-bottom: 1.2rem;
+          margin-top: 2.8rem;
+        }
+        .form-group{
+          .label--big{
+
+          }
+          .group_gt{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            .group-cb{
+              margin-right: 5rem;
+              &:last-of-type{
+                margin-right: 0;
+              }
+            }
+          }
+          .group-cb-address{
+
+          }
+        }
+        .txt_type{
+          font-size: 1.3rem;
+          color: $color-extra;
+          font-weight: 900;
+          margin-bottom: 0.8rem;
+        }
+        .list_picture{
+          margin-bottom: 1.6rem;
+          .item_pic{
+            display: inline-block;
+            position: relative;
+            width: 8rem;
+            height: 8rem;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-right: 0.8rem;
+            img{
+              display: block;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+            .btn_del{
+              @extend .bgContain;
+              display: block;
+              width: 2.4rem;
+              height: 2.4rem;
+              background-image: url("../images/icon_delete.svg");
+              position: absolute;
+              z-index: 2;
+              top: 0.6rem;
+              left: 0.6rem;
+            }
+            .btn_upload{
+              display: inline-block;
+              width: 8rem;
+              height: 8rem;
+              border: 1px solid #E8EBEE;
+              border-radius: 8px;
+              background-image: url("../images/icon_plus_square.svg");
+              -webkit-background-size: 3.6rem;
+              background-size: 3.6rem;
+              background-position: center;
+              background-repeat: no-repeat;
+            }
+            &:last-of-type{
+              margin-right: 0;
+            }
+          }
+        }
+        .btn_continute{
+          margin-top: 3rem;
+          &.mt--0{
+            margin-top: 0;
+          }
+        }
+      }
+
     }
   }
 

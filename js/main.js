@@ -42,6 +42,14 @@ $(document).ready(function () {
 
     // show hide icon remove value input
     $('.form-group-close').append(' <a href="javascript:void(0);" class="icon_close"></a>');
+
+    $('.form-group-close input').each(function () {
+        if($(this).val()){
+            $(this).parents('.form-group-close').find('.icon_close').show();
+        };
+    });
+
+
     $('.form-group-close input').bind("change keyup input keypress", function () {
         var value1 = $(this).val();
         if (!value1) {
