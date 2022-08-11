@@ -548,6 +548,9 @@ select {
 .mt--16{
   margin-top: 1.6rem;
 }
+.pb--30{
+  padding-bottom: 3rem;
+}
 .bgGradient{
   color: #fff;
   background: rgb(105,102,232);
@@ -614,6 +617,9 @@ button:focus {
   width: 100%;
   &:hover{
     color: #fff;
+  }
+  &.mt--0{
+    margin-top: 0;
   }
   &.disabled{
     -webkit-filter: grayscale(100%);
@@ -1108,6 +1114,52 @@ button:focus {
   font-size: 1.7rem;
   font-weight: 900;
   margin-bottom: 2rem;
+  p{
+
+  }
+  .sub-title{
+    font-size: 1.3rem;
+    margin-top: 0.8rem;
+    font-weight: 400;
+  }
+  &.fz--24{
+    p{
+      font-size: 2.4rem;
+    }
+  }
+}
+.group_tab{
+  .nav_tab{
+    background: #E8EBEE;
+    border-radius: 6px;
+    display: flex;
+    padding: 0.2rem;
+    .tab_item{
+      font-size: 1.3rem;
+      font-weight: 600;
+      display: inline-block;
+      flex: 1;
+      text-align: center;
+      padding: 0.5rem 1rem;
+      color: $color-extra;
+      &.active{
+        background: #FFFFFF;
+        box-shadow: 0px 2px 3px 1px rgba(95, 95, 95, 0.15);
+        border-radius: 6px;
+        color: $color-main;
+      }
+    }
+  }
+  .group_tab-content{
+    margin-top: 1.5rem;
+    .content_tab{
+      display: none;
+      &.active{
+        display: block;
+      }
+    }
+  }
+
 }
 
 .pop-btn{

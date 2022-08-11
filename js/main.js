@@ -1,6 +1,19 @@
 
 
 $(document).ready(function () {
+
+
+
+    //check tab nav
+    $('.group_tab .tab_item').click(function () {
+        var id = $(this).data('id');
+        $('.group_tab .tab_item').removeClass('active');
+        $(this).addClass('active');
+
+        $(this).parents('.group_tab').find('.content_tab').removeClass('active');
+        $(this).parents('.group_tab').find('.content_tab'+id).addClass('active');
+    });
+
     // check has menu
     if($('.nav-menu').hasClass('active')){
         $('.wrapper').addClass('hasMenu');
