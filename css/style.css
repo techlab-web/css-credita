@@ -450,7 +450,7 @@ select {
   left: 50%;
 }
 
-.bgContain, .wrapper .nav-menu .item .icon, .wrapper .box_cccd .box_wrap .check_picture .img .icon_noti, .wrapper .box_cccd .box_wrap .benefit_authen .benefit_list .item .icon, .wrapper .box_cccd .box_wrap .benefit_authen .benefit_title span::before, .wrapper .box_cccd .box_wrap .group_picture .picture_item .btn_takePhoto .icon::before, .wrapper .box_cccd .box_wrap .group_picture .picture_item .img_pic, .wrapper .box_cccd .box_wrap .group_picture .picture_item .icon_tick, .wrapper .box_cccd .box_wrap .group-tab-cccd .content_tab .group_upload .upload_item .group_img .icon_tick, .wrapper .box_cccd .box_wrap .group-tab-cccd .content_tab .group_upload .upload_item .group_img .icon_del, .wrapper .box_cccd .box_wrap .group-tab-cccd .content_tab .group_upload .upload_item .takePhoto .icon_plus, .wrapper .box_loan_complete .box_wrap .font_wrap .list_picture .item_pic .btn_del, .wrapper .box_loan .box_wrap .form_wrap .process_loan .process_map .step_item .icon, .wrapper .box_loan .box_wrap .form_wrap .info_detail .info_item .p-title .hasIco::after, .wrapper .box_loan .box_wrap .form_wrap .group_money .group_num .numOther span::before, .wrapper .box_loan .box_wrap .form_wrap .group_money .group_num .numMoney span::before, .wrapper .box_advantage_loan .box_wrap .list_advantage .item .icon, .wrapper .box_chooseCompany .box_wrap .list_company .item_com-txt::after, .wrapper .box_chooseCompany .box_wrap .list_company .item_com-ico, .wrapper .box_home_card .box_wrap .card_option .item::before, .wrapper .box_home_card .box_wrap .card_value .card_value_eye, .wrapper .box_home_card .box_wrap .card_value .icon_d, .wrapper .box_question .box_wrap .group_question .question_item .qs_title::after, .wrapper .box_advantage .box_wrap .list_advantage .item .icon, .wrapper .box_product .box_wrap .list_prd .item_prd-txt::after, .wrapper .box_product .box_wrap .list_prd .item_prd-txt .detail .detail_item .icon, .wrapper .box_product .box_wrap .list_prd .item_prd-ico, .wrapper .box_option .box_wrap .item .icon, .wrapper .box_verify .box_wrap .group_content .icon, .wrapper .header .box_wrap .header-logo, .wrapper .box_loading .img_intro, .wrapper .box_loading .logo_black, .wrapper .box_login .username span::after, .wrapper .box_login .iconapp, .wrapper .box_intro .box_intro-bottom .group_contact .btn_item .icon, .wrapper .box_intro .box_intro-bottom .title .txt_logo, .form-group.form-group-close .icon_close, .form-group.form-group-eye .icon_eye, .form-group.hasVn .wrap_input .icon_vn, .form-group.hasIco .wrap_input::before {
+.bgContain, .wrapper .nav-menu .item .icon, .wrapper .box_noti .box_wrap .noti_item .noti-icon, .wrapper .box_cccd .box_wrap .check_picture .img .icon_noti, .wrapper .box_cccd .box_wrap .benefit_authen .benefit_list .item .icon, .wrapper .box_cccd .box_wrap .benefit_authen .benefit_title span::before, .wrapper .box_cccd .box_wrap .group_picture .picture_item .btn_takePhoto .icon::before, .wrapper .box_cccd .box_wrap .group_picture .picture_item .img_pic, .wrapper .box_cccd .box_wrap .group_picture .picture_item .icon_tick, .wrapper .box_cccd .box_wrap .group-tab-cccd .content_tab .group_upload .upload_item .group_img .icon_tick, .wrapper .box_cccd .box_wrap .group-tab-cccd .content_tab .group_upload .upload_item .group_img .icon_del, .wrapper .box_cccd .box_wrap .group-tab-cccd .content_tab .group_upload .upload_item .takePhoto .icon_plus, .wrapper .box_loan_complete .box_wrap .font_wrap .list_picture .item_pic .btn_del, .wrapper .box_loan .box_wrap .form_wrap .process_loan .process_map .step_item .icon, .wrapper .box_loan .box_wrap .form_wrap .info_detail .info_item .p-title .hasIco::after, .wrapper .box_loan .box_wrap .form_wrap .group_money .group_num .numOther span::before, .wrapper .box_loan .box_wrap .form_wrap .group_money .group_num .numMoney span::before, .wrapper .box_advantage_loan .box_wrap .list_advantage .item .icon, .wrapper .box_chooseCompany .box_wrap .list_company .item_com-txt::after, .wrapper .box_chooseCompany .box_wrap .list_company .item_com-ico, .wrapper .box_home_card .box_wrap .card_option .item::before, .wrapper .box_home_card .box_wrap .card_value .card_value_eye, .wrapper .box_home_card .box_wrap .card_value .icon_d, .wrapper .box_question .box_wrap .group_question .question_item .qs_title::after, .wrapper .box_advantage .box_wrap .list_advantage .item .icon, .wrapper .box_product .box_wrap .list_prd .item_prd-txt::after, .wrapper .box_product .box_wrap .list_prd .item_prd-txt .detail .detail_item .icon, .wrapper .box_product .box_wrap .list_prd .item_prd-ico, .wrapper .box_option .box_wrap .item .icon, .wrapper .box_verify .box_wrap .group_content .icon, .wrapper .header .box_wrap .header-logo, .wrapper .box_loading .img_intro, .wrapper .box_loading .logo_black, .wrapper .box_login .username span::after, .wrapper .box_login .iconapp, .wrapper .box_intro .box_intro-bottom .group_contact .btn_item .icon, .wrapper .box_intro .box_intro-bottom .title .txt_logo, .form-group.form-group-close .icon_close, .form-group.form-group-eye .icon_eye, .form-group.hasVn .wrap_input .icon_vn, .form-group.hasIco .wrap_input::before {
   -webkit-background-size: contain;
   background-size: contain;
   background-repeat: no-repeat;
@@ -2614,6 +2614,84 @@ button:focus {
 .wrapper .box_cccd .box_wrap .check_picture.check_picture--error .txt_noti {
   color: red;
 }
+.wrapper .box_noti .box_wrap .noti_item {
+  position: relative;
+  display: block;
+  padding: 1.2rem 1.6rem;
+  border-bottom: 1px solid #E8EBEE;
+}
+.wrapper .box_noti .box_wrap .noti_item::before {
+  content: "";
+  width: calc(100% + 3.2rem);
+  height: 100%;
+  background: #F0FCFA;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  margin-left: -1.6rem;
+  margin-right: -1.6rem;
+  display: none;
+}
+.wrapper .box_noti .box_wrap .noti_item span {
+  position: relative;
+  z-index: 3;
+}
+.wrapper .box_noti .box_wrap .noti_item .noti-icon {
+  display: none;
+  width: 3.2rem;
+  height: 3.2rem;
+  position: absolute;
+  left: 0;
+  top: 1.2rem;
+  z-index: 1;
+}
+.wrapper .box_noti .box_wrap .noti_item .group_txt .noti-title {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #040C22;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  max-height: 4.2rem;
+}
+.wrapper .box_noti .box_wrap .noti_item .group_txt .noti-des {
+  display: block;
+  font-size: 1.5rem;
+  margin-top: 0.7rem;
+  color: #5C616F;
+}
+.wrapper .box_noti .box_wrap .noti_item .group_txt .noti-date {
+  display: block;
+  font-size: 1.1rem;
+  color: #5C616F;
+  margin-top: 0.7rem;
+}
+.wrapper .box_noti .box_wrap .noti_item.hasIco {
+  padding-left: 4.3rem;
+  position: relative;
+}
+.wrapper .box_noti .box_wrap .noti_item.hasIco .noti-icon {
+  display: block;
+}
+.wrapper .box_noti .box_wrap .noti_item.noti_item-transaction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.wrapper .box_noti .box_wrap .noti_item.noti_item-transaction .noti-money {
+  display: block;
+  white-space: nowrap;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-left: 1rem;
+}
+.wrapper .box_noti .box_wrap .noti_item.noti-new::before {
+  display: block;
+}
 .wrapper .noti_detail .box_wrap .noti-title {
   font-size: 1.7rem;
   font-weight: 600;
@@ -2628,6 +2706,91 @@ button:focus {
   margin: auto;
   height: auto !important;
   max-width: 100% !important;
+}
+.wrapper .box_listLoan .box_wrap .group_noLoan {
+  margin-top: 13rem;
+  text-align: center;
+}
+.wrapper .box_listLoan .box_wrap .group_noLoan .title {
+  color: #A7AAB2;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.wrapper .box_listLoan .box_wrap .group_noLoan .des {
+  font-size: 1.3rem;
+  margin: 1.6rem auto 0;
+  color: #5C616F;
+  max-width: 30.6rem;
+}
+.wrapper .box_listLoan .box_wrap .group_noLoan .btn_borrow {
+  display: block;
+  margin: 1.6rem auto 0;
+  color: #fff;
+  padding: 0.8rem 3.1rem;
+  border-radius: 50px;
+  width: fit-content;
+  font-size: 1.3rem;
+  background: #1BC5AC;
+}
+.wrapper .box_listLoan .box_wrap .group_list .tab_status {
+  display: flex;
+  border-bottom: 1px solid #DEE3E7;
+}
+.wrapper .box_listLoan .box_wrap .group_list .tab_status .item {
+  flex: 1;
+  display: block;
+  color: #5C616F;
+  font-size: 1.3rem;
+  padding: 0 1rem;
+  text-align: center;
+}
+.wrapper .box_listLoan .box_wrap .group_list .tab_status .item span {
+  position: relative;
+  display: inline-block;
+  padding: 1rem 0;
+}
+.wrapper .box_listLoan .box_wrap .group_list .tab_status .item.active {
+  color: #1BC5AC;
+  font-weight: 700;
+}
+.wrapper .box_listLoan .box_wrap .group_list .tab_status .item.active span::after {
+  content: "";
+  display: block;
+  width: 90%;
+  height: 1px;
+  background: #1BC5AC;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -45%;
+}
+.wrapper .box_listLoan .box_wrap .group_list .loan_total {
+  background: #F0FCFA;
+  border: 1px solid #6CE2D1;
+  border-radius: 10px;
+  padding: 1.6rem;
+}
+.wrapper .box_listLoan .box_wrap .group_list .loan_total .item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 1.5rem;
+  color: #040C22;
+  margin-bottom: 1rem;
+}
+.wrapper .box_listLoan .box_wrap .group_list .loan_total .item:last-of-type {
+  margin-bottom: 0;
+}
+.wrapper .box_listLoan .box_wrap .group_list .item_loanAmout .ul-detail .item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 1.5rem;
+  color: #040C22;
+  margin-bottom: 1rem;
+}
+.wrapper .box_listLoan .box_wrap .group_list .item_loanAmout .ul-detail .item:last-of-type {
+  margin-bottom: 0;
 }
 .wrapper .nav-menu {
   display: flex;

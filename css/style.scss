@@ -1734,6 +1734,88 @@
     }
   }
   .box_noti{
+    .box_wrap{
+      .noti_item{
+        position: relative;
+        display: block;
+        padding: 1.2rem 1.6rem;
+        border-bottom: 1px solid #E8EBEE;
+        &::before{
+          content: "";
+          width: calc(100% + 3.2rem);
+          height: 100%;
+          background: #F0FCFA;
+          position: absolute;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          margin-left: -1.6rem;
+          margin-right: -1.6rem;
+          display: none;
+        }
+        span{
+          position: relative;
+          z-index: 3;
+        }
+        .noti-icon{
+          @extend .bgContain;
+          display: none;
+          width: 3.2rem;
+          height: 3.2rem;
+          position: absolute;
+          left: 0;
+          top: 1.2rem;
+          z-index: 1;
+        }
+        .group_txt{
+          .noti-title{
+            display: block;
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: $color-main;
+            @include numLine(2);
+            max-height: 4.2rem;
+          }
+          .noti-des{
+            display: block;
+            font-size: 1.5rem;
+            margin-top: 0.7rem;
+            color: $color-extra;
+          }
+          .noti-date{
+            display: block;
+            font-size: 1.1rem;
+            color: $color-extra;
+            margin-top: 0.7rem;
+          }
+        }
+        &.hasIco{
+          padding-left: 4.3rem;
+          position: relative;
+          .noti-icon{
+            display: block;
+          }
+        }
+        &.noti_item-transaction{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+          .noti-money{
+            display: block;
+            white-space: nowrap;
+            font-size: 1.5rem;
+            font-weight: 700;
+            padding-left: 1rem;
+          }
+        }
+        &.noti-new{
+          &::before{
+            display: block;
+          }
+        }
+      }
+    }
 
   }
   .noti_detail{
@@ -1755,6 +1837,168 @@
       }
     }
 
+  }
+
+  .box_listLoan{
+    .box_wrap{
+      .section-title{
+
+      }
+      .group_noLoan{
+        margin-top: 13rem;
+        text-align: center;
+        .title{
+          color: #A7AAB2;
+          font-size: 2rem;
+          font-weight: 700;
+        }
+        .des{
+          font-size: 1.3rem;
+          margin: 1.6rem auto 0;
+          color: $color-extra;
+          max-width: 30.6rem;
+        }
+        .btn_borrow{
+          display: block;
+          margin: 1.6rem auto 0;
+          color: #fff;
+          padding: 0.8rem 3.1rem;
+          border-radius: 50px;
+          width: fit-content;
+          font-size: 1.3rem;
+          background: $color-green;
+        }
+      }
+      .group_list{
+        .tab_status{
+          display: flex;
+          border-bottom: 1px solid #DEE3E7;
+          .item{
+            flex: 1;
+            display: block;
+            color: $color-extra;
+            font-size: 1.3rem;
+            padding: 0 1rem;
+            text-align: center;
+            span{
+              position: relative;
+              display: inline-block;
+              padding: 1rem 0;
+            }
+            &.active{
+              color: $color-green;
+              font-weight: 700;
+              span{
+
+                &::after{
+                  content: '';
+                  display: block;
+                  width: 90%;
+                  height: 1px;
+                  background: $color-green;
+                  position: absolute;
+                  bottom: 0;
+                  left: 50%;
+                  margin-left: -45%;
+                }
+              }
+
+            }
+          }
+        }
+        .choose_status{
+
+        }
+        .loan_total{
+          background: #F0FCFA;
+          border: 1px solid #6CE2D1;
+          border-radius: 10px;
+          padding: 1.6rem;
+          .item{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            font-size: 1.5rem;
+            color: $color-main;
+            margin-bottom: 1rem;
+            .txt-title{
+
+            }
+            .txt-value{
+
+            }
+            &:last-of-type{
+              margin-bottom: 0;
+            }
+          }
+          .btn_payment{
+            
+          }
+        }
+        .item_loanAmout{
+          .title{
+            span{
+              .hasIco{
+                &.icon_save{
+
+                }
+                &.icon_tick_green{
+
+                }
+                &.icon_noti_red{
+
+                }
+                &.icon_wait{
+
+                }
+              }
+            }
+          }
+          .ul-detail{
+            .item{
+              display: flex;
+              justify-content: space-between;
+              align-items: flex-start;
+              font-size: 1.5rem;
+              color: $color-main;
+              margin-bottom: 1rem;
+              .txt-title{
+
+              }
+              .txt-value{
+
+              }
+              &:last-of-type{
+                margin-bottom: 0;
+              }
+            }
+          }
+          .btn_submit{
+
+          }
+          &-save{
+            .btn_submit{
+
+            }
+          }
+          &-done{
+            .btn_submit{
+
+            }
+          }
+          &-miss{
+            .btn_submit{
+
+            }
+          }
+          &-wait{
+            .btn_submit{
+
+            }
+          }
+        }
+      }
+    }
   }
 
 
