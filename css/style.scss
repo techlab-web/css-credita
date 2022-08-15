@@ -1936,25 +1936,71 @@
           }
         }
         .item_loanAmout{
+          margin-top: 1.6rem;
+          background: #FFFFFF;
+          border-radius: 10px;
+          overflow: hidden;
           .title{
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-align: center;
+            padding: 1rem;
             span{
-              .hasIco{
+              display: inline-block;
+              &.hasIco{
+                padding-left: 3.2rem;
+                position: relative;
+                &::before{
+                  @extend .bgContain;
+                  content: '';
+                  display: block;
+                  width: 2.4rem;
+                  height: 2.4rem;
+                  position: absolute;
+                  left: 0;
+                  top: -0.1rem;
+                  z-index: 1;
+                }
                 &.icon_save{
-
+                  &::before{
+                    background-image: url("../images/icon_save.svg");
+                  }
                 }
                 &.icon_tick_green{
-
+                  &::before{
+                    background-image: url("../images/icon_tick_green_line.svg");
+                  }
                 }
                 &.icon_noti_red{
-
+                  &::before{
+                    background-image: url("../images/icon_noti_red.svg");
+                  }
                 }
                 &.icon_wait{
-
+                  &::before{
+                    background-image: url("../images/icon_wait.svg");
+                  }
+                }
+                &.icon_tick_gray{
+                  &::before{
+                    background-image: url("../images/icon_tick_gray_line.svg");
+                  }
+                }
+                &.icon_cancel{
+                  &::before{
+                    background-image: url("../images/icon_close_gray.svg");
+                  }
+                }
+                &.icon_reject{
+                  &::before{
+                    background-image: url("../images/icon_reject_gray.svg");
+                  }
                 }
               }
             }
           }
           .ul-detail{
+            padding: 1.6rem;
             .item{
               display: flex;
               justify-content: space-between;
@@ -1974,28 +2020,465 @@
             }
           }
           .btn_submit{
-
+            margin: 0 1.6rem 1.6rem;
+            width: calc(100% - 3.2rem);
           }
           &-save{
+            border: 1px solid #FFD79B;
+            .title{
+              background: #FFF2DD;
+              border-bottom: 1px solid #FFD79B;
+              color: #FB9D10;
+            }
             .btn_submit{
-
+              background-color: #FB9D10;
             }
           }
           &-done{
+            border: 1px solid #6CE2D1;
+            .title{
+              background: #D3F6F1;
+              border-bottom: 1px solid #6CE2D1;
+              color: $color-green;
+            }
             .btn_submit{
 
             }
           }
           &-miss{
+            background: #FFEAEA;
+            border: 1px solid #FF9A95;
+            .title{
+              background: #FFD6D3;
+              border-bottom: 1px solid #FF9A95;
+              font-weight: 400;
+              color: #FF3B30;
+            }
             .btn_submit{
-
+              background-color: red;
             }
           }
           &-wait{
+            border: 1px solid #FFD79B;
+            .title{
+              background: #FFF2DD;
+              border-bottom: 1px solid #FFD79B;
+              color: #E18700;
+            }
             .btn_submit{
 
             }
           }
+          &-end{
+            border: 1px solid #DEE3E7;
+            .title{
+              color: $color-extra;
+              span{
+
+              }
+            }
+            .ul-detail{
+              .item{
+                color: $color-extra;
+              }
+            }
+          }
+          &--gray{
+            border: 1px solid #DEE3E7;
+            .title{
+              background: #F6F7F8;
+              border-bottom: 1px solid #DEE3E7;
+            }
+          }
+          &--white{
+            .title{
+              background: #fff;
+              border-bottom: 1px solid #E8EBEE;
+            }
+          }
+        }
+      }
+    }
+  }
+  .box_loanPayment{
+    .box_wrap{
+      .section-title{
+        margin-bottom: 0;
+      }
+      .loan-title{
+        font-size: 1.7rem;
+        font-weight: 600;
+        margin-bottom: 1.2rem;
+        margin-top: 2rem;
+      }
+      .wallet_detail{
+        padding: 1.6rem 1.6rem 1.6rem 6.8rem;
+        border: 1px solid #DEE3E7;
+        border-radius: 10px;
+        position: relative;
+        .icon{
+          @extend .bgContain;
+          width: 4.4rem;
+          height: 4.4rem;
+          background-image: url(../images/icon_sp1.svg);
+          position: absolute;
+          left: 1.2rem;
+          top: 50%;
+          margin-top: -2.2rem;
+          z-index: 1;
+        }
+        .txt_title{
+          font-size: 1.5rem;
+          font-weight: 600;
+        }
+        .txt_value{
+          font-size: 1.3rem;
+          margin-top: 0.3rem;
+          span{
+            font-weight: 600;
+            color: #006253;
+          }
+        }
+      }
+      .detail-transaction{
+        border: 1px solid #E8EBEE;
+        border-radius: 10px;
+        padding: 2rem 1.6rem;
+        .item{
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-between;
+          margin-bottom: 1.2rem;
+          font-size: 1.5rem;
+          &-title{
+            white-space: nowrap;
+          }
+          &-value{
+            margin-left: 2rem;
+            text-align: right;
+          }
+          &:last-of-type{
+            margin-bottom: 0;
+          }
+        }
+        .line--2{
+          background: #E8EBEE;
+          width: 100%;
+          height: 2px;
+          margin-bottom: 1.2rem;
+        }
+      }
+    }
+  }
+
+  .pay_succes{
+    .box_wrap{
+      margin-top: 7rem;
+      .img{
+        @extend .bgContain;
+        width: 16.5rem;
+        height: 16.5rem;
+        background-image: url("../images/pay_done.png");
+        margin: auto;
+      }
+      .txt-title{
+        font-size: 2.2rem;
+        margin-top: 1.2rem;
+        font-weight: 900;
+      }
+      .txt-des{
+        font-size: 1.5rem;
+        margin-top: 1.2rem;
+        span{
+
+        }
+      }
+    }
+  }
+  .box_loanDetail{
+    .box_wrap{
+      .section-title{
+
+      }
+      .loan_total {
+        background: #F0FCFA;
+        border: 1px solid #6CE2D1;
+        border-radius: 10px;
+        padding: 1.6rem;
+
+        .item {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+          font-size: 1.5rem;
+          color: $color-main;
+          margin-bottom: 1rem;
+
+          .txt-title {
+
+          }
+
+          .txt-value {
+
+          }
+
+          &:last-of-type {
+            margin-bottom: 0;
+          }
+        }
+
+        .btn_payment {
+
+        }
+        &--miss{
+          background: #FFEAEA;
+          padding-top: 0;
+          overflow: hidden;
+          border: 1px solid #FFD6D3;
+          .title{
+            font-size: 1.5rem;
+            text-align: center;
+            padding: 1rem;
+            background: #FFD6D3;
+            border-bottom: 1px solid #FFD6D3;
+            font-weight: 400;
+            color: #FF3B30;
+            margin-left: -1.6rem;
+            margin-right: -1.6rem;
+            margin-bottom: 1.6rem;
+            position: relative;
+            span{
+              padding-left: 3.2rem;
+              position: relative;
+              &::before{
+                @extend .bgContain;
+                content: '';
+                display: block;
+                width: 2.4rem;
+                height: 2.4rem;
+                position: absolute;
+                left: 0;
+                top: -0.1rem;
+                z-index: 1;
+                background-image: url(../images/icon_noti_red.svg);
+              }
+            }
+          }
+          .btn_payment{
+            background-color: red;
+          }
+        }
+      }
+      .link_item{
+        display: block;
+        padding: 1.4rem 3.6rem 1.4rem 5.2rem;
+        font-size: 1.5rem;
+        font-weight: 700;
+        border: 1px solid #E8EBEE;
+        border-radius: 10px;
+        position: relative;
+        margin-top: 1.6rem;
+        color: $color-main;
+        &::after{
+          @extend .bgContain;
+          content: '';
+          display: block;
+          background-image: url("../images/icon_arr_right_gray.svg");
+          width: 1.6rem;
+          height: 1.6rem;
+          position: absolute;
+          right: 1.2rem;
+          top: 50%;
+          margin-top: -0.8rem;
+          z-index: 1;
+        }
+        .icon{
+          @extend .bgContain;
+          width: 2.4rem;
+          height: 2.4rem;
+          position: absolute;
+          z-index: 1;
+          left: 1.6rem;
+          top: 50%;
+          margin-top: -1.2rem;
+          &.icon_calendar{
+            background-image: url("../images/icon_calendar_black.svg");
+          }
+          &.icon_history{
+            background-image: url("../images/icon_history.svg");
+          }
+        }
+      }
+      .loanDetail{
+        margin-top: 1.6rem;
+        background: #FFFFFF;
+        border-radius: 10px;
+        overflow: hidden;
+        .title{
+          font-size: 1.5rem;
+          font-weight: 700;
+          text-align: center;
+          padding: 1rem;
+          span{
+            display: inline-block;
+            &.hasIco{
+              padding-left: 3.2rem;
+              position: relative;
+              &::before{
+                @extend .bgContain;
+                content: '';
+                display: block;
+                width: 2.4rem;
+                height: 2.4rem;
+                position: absolute;
+                left: 0;
+                top: -0.1rem;
+                z-index: 1;
+              }
+              &.icon_save{
+                &::before{
+                  background-image: url("../images/icon_save.svg");
+                }
+              }
+              &.icon_tick_green{
+                &::before{
+                  background-image: url("../images/icon_tick_green_line.svg");
+                }
+              }
+              &.icon_noti_red{
+                &::before{
+                  background-image: url("../images/icon_noti_red.svg");
+                }
+              }
+              &.icon_wait{
+                &::before{
+                  background-image: url("../images/icon_wait.svg");
+                }
+              }
+              &.icon_tick_gray{
+                &::before{
+                  background-image: url("../images/icon_tick_gray_line.svg");
+                }
+              }
+              &.icon_cancel{
+                &::before{
+                  background-image: url("../images/icon_close_gray.svg");
+                }
+              }
+              &.icon_reject{
+                &::before{
+                  background-image: url("../images/icon_reject_gray.svg");
+                }
+              }
+            }
+          }
+        }
+        .ul-detail{
+          padding: 1.6rem;
+          .item{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            font-size: 1.5rem;
+            color: $color-main;
+            border-bottom: 1px solid #E8EBEE;
+            padding: 1.2rem 0;
+            .txt-title{
+
+            }
+            .txt-value{
+
+            }
+            .view_contract{
+              display: block;
+              font-size: 1.5rem;
+              font-weight: 600;
+              margin: 0 auto 0.5rem;
+              width: fit-content;
+              color: $color-green;
+            }
+            &.non-border{
+              border-bottom: 0;
+              pading-bottom: 0;
+            }
+            &:first-of-type{
+              padding-top: 0;
+            }
+            &:last-of-type{
+              margin-bottom: 0;
+              border-bottom: 0;
+              padding-bottom: 0;
+            }
+          }
+        }
+        .btn_submit{
+          margin: 0 1.6rem 1.6rem;
+          width: calc(100% - 3.2rem);
+        }
+        &--yellow{
+          border: 1px solid #FFD79B;
+          .title{
+            background: #FFF2DD;
+            border-bottom: 1px solid #FFD79B;
+            color: #FB9D10;
+          }
+          .btn_submit{
+            background-color: #FB9D10;
+          }
+        }
+        &--gray{
+          border: 1px solid #DEE3E7;
+          .title{
+            background: #F6F7F8;
+            border-bottom: 1px solid #DEE3E7;
+            color: $color-extra;
+          }
+        }
+        &--green {
+          border: 1px solid #6CE2D1;
+
+          .title {
+            background: #D3F6F1;
+            border-bottom: 1px solid #6CE2D1;
+            color: $color-green;
+          }
+        }
+        &--white{
+          border: 1px solid #E8EBEE;
+          .title{
+            background: #fff;
+            border-bottom: 1px solid #6CE2D1;
+            color: $color-green;
+          }
+          .btn_submit{
+
+          }
+        }
+        &--red{
+          background: #FFEAEA;
+          border: 1px solid #FF9A95;
+          .title{
+            background: #FFD6D3;
+            border-bottom: 1px solid #FF9A95;
+            font-weight: 400;
+            color: #FF3B30;
+          }
+          .btn_submit{
+            background-color: red;
+          }
+        }
+      }
+      .group_btn{
+        .btn_edit{
+          background: #FB9D10;
+        }
+        .btn_cancel{
+          display: block;
+          font-size: 1.5rem;
+          font-weight: 600;
+          margin: 1.6rem auto 0;
+          width: fit-content;
+          color: #FB9D10;
         }
       }
     }

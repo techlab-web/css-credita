@@ -882,6 +882,10 @@ button:focus {
       border-radius: 10px;
       margin-right: 0.8rem;
       text-align: center;
+      @media screen and (max-width: 374px) {
+        margin-right: 0.3rem;
+        width: 4.4rem;
+      }
       &:last-of-type{
         margin-right: 0;
       }
@@ -1196,6 +1200,16 @@ button:focus {
   border-radius: 15px;
   min-height: 200px;
   padding: 2.5rem 2.4rem 3rem;
+  .closeModal{
+    @extend .bgContain;
+    width: 2.4rem;
+    height: 2.4rem;
+    background-image: url("../images/icon_close_modal.svg");
+    position: absolute;
+    z-index: 5;
+    right: 1.6rem;
+    top: 1.6rem;
+  }
   .pop-inner{
     .pop-title{
       font-size: 2rem;
@@ -1208,6 +1222,79 @@ button:focus {
     .pop-btn{
 
     }
+    .noti_wallet{
+      font-size: 1.5rem;
+      padding: 1.2rem 1.2rem 1.2rem 4.5rem;
+      position: relative;
+      background: #FFE6E4;
+      border-radius: 10px;
+      margin-top: 1.2rem;
+      &::before{
+        @extend .bgContain;
+        content: '';
+        display: block;
+        width: 2.4rem;
+        height: 2.4rem;
+        position: absolute;
+        top: 1.2rem;
+        left: 1.4rem;
+        z-index: 1;
+        background-image: url(../images/icon_noti_red.svg);
+      }
+    }
+    .wallet_detail{
+      padding: 1.6rem 12.2rem 1.6rem 6.8rem;
+      border: 1px solid #DEE3E7;
+      border-radius: 10px;
+      position: relative;
+      margin-top: 0.8rem;
+      .icon{
+        @extend .bgContain;
+        width: 4.4rem;
+        height: 4.4rem;
+        background-image: url(../images/icon_sp1.svg);
+        position: absolute;
+        left: 1.2rem;
+        top: 50%;
+        margin-top: -2.2rem;
+        z-index: 1;
+      }
+      .txt_title{
+        font-size: 1.1rem;
+        color: #5C616F;
+      }
+      .txt_value{
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-top: 0.6rem;
+        color: red;
+      }
+      .btn_recharge{
+        border-radius: 50px;
+        position: absolute;
+        right: 1.2rem;
+        top: 50%;
+        margin-top: -2.2rem;
+        width: fit-content;
+        min-width: 11rem;
+      }
+    }
+    .group_otp-loan{
+      .group_input{
+        .input_otp{
+          margin-right: 0.3rem;
+          width: 4.4rem;
+          @media screen and (max-width: 374px){
+            width: 3.5rem;
+            height: 3.6rem;
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+  }
+  &.pd--16{
+    padding: 1.6rem;
   }
 }
 
