@@ -626,6 +626,26 @@ button:focus {
     filter: grayscale(100%);
     pointer-events: none;
   }
+  &.hasIco{
+    span{
+      display: inline-block;
+      text-align: center;
+      padding-left: 3rem;
+      position: relative;
+      &::before{
+        @extend .bgContain;
+        content: '';
+        width: 2.4rem;
+        height: 2.4rem;
+        background-image: url("../images/icon_ruttien.svg");
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        top: 50%;
+        margin-top: -1.2rem;
+      }
+    }
+  }
 }
 
 .forgot_pw{
@@ -868,6 +888,9 @@ button:focus {
     .input-error{
       display: block;
     }
+  }
+  &.mb--0{
+    margin-bottom: 0;
   }
 }
 .group_otp{
@@ -1180,6 +1203,7 @@ button:focus {
     flex: 1;
     border-radius: 100px;
     max-width: 50%;
+    font-weight: 400;
     &.btn_cancel{
       background: #CDD4DB;
     }

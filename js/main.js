@@ -72,7 +72,7 @@ $(document).ready(function () {
         }
     });
     $('.icon_close').click(function () {
-        $(this).parents('.form-group-close').find('input').val('');
+        $(this).parents('.form-group-close').find('input').val('').focus();
         $(this).hide();
     });
 
