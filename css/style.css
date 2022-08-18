@@ -450,7 +450,7 @@ select {
   left: 50%;
 }
 
-.bgContain, .wrapper .nav-menu .item .icon, .wrapper .box_withdraw .box_wrap .chooseBank .group_choose .item .item-icon, .wrapper .box_withdraw .box_wrap .wallet_detail .icon, .wrapper .box_loanDetail .box_wrap .payLoan .group_choose .item .item-icon, .wrapper .box_loanDetail .box_wrap .payNoti .detail-transaction .icon, .wrapper .box_loanDetail .box_wrap .period_pay .item-des::after, .wrapper .box_loanDetail .box_wrap .period_pay .item-title::before, .wrapper .box_loanDetail .box_wrap .loanDetail .title span.hasIco::before, .wrapper .box_loanDetail .box_wrap .link_item .icon, .wrapper .box_loanDetail .box_wrap .link_item::after, .wrapper .box_loanDetail .box_wrap .loan_total--miss .title span::before, .wrapper .pay_succes .box_wrap .img, .wrapper .box_loanPayment .box_wrap .wallet_detail .icon, .wrapper .box_listLoan .box_wrap .group_list .item_loanAmout .title span.hasIco::before, .wrapper .box_noti .box_wrap .noti_item .noti-icon, .wrapper .box_cccd .box_wrap .check_picture .img .icon_noti, .wrapper .box_cccd .box_wrap .benefit_authen .benefit_list .item .icon, .wrapper .box_cccd .box_wrap .benefit_authen .benefit_title span::before, .wrapper .box_cccd .box_wrap .group_picture .picture_item .btn_takePhoto .icon::before, .wrapper .box_cccd .box_wrap .group_picture .picture_item .img_pic, .wrapper .box_cccd .box_wrap .group_picture .picture_item .icon_tick, .wrapper .box_cccd .box_wrap .group-tab-cccd .content_tab .group_upload .upload_item .group_img .icon_tick, .wrapper .box_cccd .box_wrap .group-tab-cccd .content_tab .group_upload .upload_item .group_img .icon_del, .wrapper .box_cccd .box_wrap .group-tab-cccd .content_tab .group_upload .upload_item .takePhoto .icon_plus, .wrapper .box_loan_complete .box_wrap .font_wrap .list_picture .item_pic .btn_del, .wrapper .box_loan .box_wrap .form_wrap .process_loan .process_map .step_item .icon, .wrapper .box_loan .box_wrap .form_wrap .info_detail .info_item .p-title .hasIco::after, .wrapper .box_loan .box_wrap .form_wrap .group_money .group_num .numOther span::before, .wrapper .box_loan .box_wrap .form_wrap .group_money .group_num .numMoney span::before, .wrapper .box_advantage_loan .box_wrap .list_advantage .item .icon, .wrapper .box_chooseCompany .box_wrap .list_company .item_com-txt::after, .wrapper .box_chooseCompany .box_wrap .list_company .item_com-ico, .wrapper .box_home_card .box_wrap .card_option .item::before, .wrapper .box_home_card .box_wrap .card_value .card_value_eye, .wrapper .box_home_card .box_wrap .card_value .icon_d, .wrapper .box_question .box_wrap .group_question .question_item .qs_title::after, .wrapper .box_advantage .box_wrap .list_advantage .item .icon, .wrapper .box_product .box_wrap .list_prd .item_prd-txt::after, .wrapper .box_product .box_wrap .list_prd .item_prd-txt .detail .detail_item .icon, .wrapper .box_product .box_wrap .list_prd .item_prd-ico, .wrapper .box_option .box_wrap .item .icon, .wrapper .box_verify .box_wrap .group_content .icon, .wrapper .header .box_wrap .header-logo, .wrapper .box_loading .img_intro, .wrapper .box_loading .logo_black, .wrapper .box_login .username span::after, .wrapper .box_login .iconapp, .wrapper .box_intro .box_intro-bottom .group_contact .btn_item .icon, .wrapper .box_intro .box_intro-bottom .title .txt_logo, .pop-bg .pop-inner .wallet_detail .icon, .pop-bg .pop-inner .noti_wallet::before, .pop-bg .closeModal, .form-group.form-group-close .icon_close, .form-group.form-group-eye .icon_eye, .form-group.hasVn .wrap_input .icon_vn, .form-group.hasIco .wrap_input::before, .btn--green.hasIco span::before {
+.bgContain, .wrapper .nav-menu .item .icon, .wrapper .box_addBank .box_wrap .infoBank .chooseBank .item_prd-ico, .wrapper .box_addBank .box_wrap .list_bank .item .item-ico, .wrapper .box_addBank .box_wrap .box_search .form-group::before, .wrapper .box_listBank .box_wrap .list_prd .item_prd .btn_remove, .wrapper .box_listBank .box_wrap .list_prd .item_prd-txt::after, .wrapper .box_listBank .box_wrap .list_prd .item_prd-ico, .wrapper .box_listRule .box_wrap .list_prd .item_prd-txt::after, .wrapper .box_listRule .box_wrap .list_prd .item_prd-ico, .wrapper .listFunction .box_wrap .item .txt::after, .wrapper .listFunction .box_wrap .item .icon, .wrapper .box_infoUser .box_wrap .info_status-fail span::after, .wrapper .box_infoUser .box_wrap .info_status-true span::before, .wrapper .box_withdraw .box_wrap .chooseBank .group_choose .item .item-icon, .wrapper .box_withdraw .box_wrap .wallet_detail .icon, .wrapper .box_loanDetail .box_wrap .payLoan .group_choose .item .item-icon, .wrapper .box_loanDetail .box_wrap .payNoti .detail-transaction .icon, .wrapper .box_loanDetail .box_wrap .period_pay .item-des::after, .wrapper .box_loanDetail .box_wrap .period_pay .item-title::before, .wrapper .box_loanDetail .box_wrap .loanDetail .title span.hasIco::before, .wrapper .box_loanDetail .box_wrap .link_item .icon, .wrapper .box_loanDetail .box_wrap .link_item::after, .wrapper .box_loanDetail .box_wrap .loan_total--miss .title span::before, .wrapper .pay_succes .box_wrap .img, .wrapper .box_loanPayment .box_wrap .wallet_detail .icon, .wrapper .box_listLoan .box_wrap .group_list .item_loanAmout .title span.hasIco::before, .wrapper .box_noti .box_wrap .noti_item .noti-icon, .wrapper .box_cccd .box_wrap .check_picture .img .icon_noti, .wrapper .box_cccd .box_wrap .benefit_authen .benefit_list .item .icon, .wrapper .box_cccd .box_wrap .benefit_authen .benefit_title span::before, .wrapper .box_cccd .box_wrap .group_picture .picture_item .btn_takePhoto .icon::before, .wrapper .box_cccd .box_wrap .group_picture .picture_item .img_pic, .wrapper .box_cccd .box_wrap .group_picture .picture_item .icon_tick, .wrapper .box_cccd .box_wrap .group-tab-cccd .content_tab .group_upload .upload_item .group_img .icon_tick, .wrapper .box_cccd .box_wrap .group-tab-cccd .content_tab .group_upload .upload_item .group_img .icon_del, .wrapper .box_cccd .box_wrap .group-tab-cccd .content_tab .group_upload .upload_item .takePhoto .icon_plus, .wrapper .box_loan_complete .box_wrap .font_wrap .list_picture .item_pic .btn_del, .wrapper .box_loan .box_wrap .form_wrap .process_loan .process_map .step_item .icon, .wrapper .box_loan .box_wrap .form_wrap .info_detail .info_item .p-title .hasIco::after, .wrapper .box_loan .box_wrap .form_wrap .group_money .group_num .numOther span::before, .wrapper .box_loan .box_wrap .form_wrap .group_money .group_num .numMoney span::before, .wrapper .box_advantage_loan .box_wrap .list_advantage .item .icon, .wrapper .box_chooseCompany .box_wrap .list_company .item_com-txt::after, .wrapper .box_chooseCompany .box_wrap .list_company .item_com-ico, .wrapper .box_home_card .box_wrap .card_option .item::before, .wrapper .box_home_card .box_wrap .card_value .card_value_eye, .wrapper .box_home_card .box_wrap .card_value .icon_d, .wrapper .box_question .box_wrap .group_question .question_item .qs_title::after, .wrapper .box_advantage .box_wrap .list_advantage .item .icon, .wrapper .box_product .box_wrap .list_prd .item_prd-txt::after, .wrapper .box_product .box_wrap .list_prd .item_prd-txt .detail .detail_item .icon, .wrapper .box_product .box_wrap .list_prd .item_prd-ico, .wrapper .box_option .box_wrap .item .icon, .wrapper .box_verify .box_wrap .group_content .icon, .wrapper .header .box_wrap .header-logo, .wrapper .box_loading .img_intro, .wrapper .box_loading .logo_black, .wrapper .box_login .username span::after, .wrapper .box_login .iconapp, .wrapper .box_intro .box_intro-bottom .group_contact .btn_item .icon, .wrapper .box_intro .box_intro-bottom .title .txt_logo, .pop-bg .pop-inner .wallet_detail .icon, .pop-bg .pop-inner .noti_wallet::before, .pop-bg .closeModal, .form-group.form-group-close .icon_close, .form-group.form-group-eye .icon_eye, .form-group.hasVn .wrap_input .icon_vn, .form-group.hasIco .wrap_input::before, .btn--green.hasIco span::before {
   -webkit-background-size: contain;
   background-size: contain;
   background-repeat: no-repeat;
@@ -976,6 +976,7 @@ button:focus {
   font-size: 1.7rem;
   font-weight: 900;
   margin-bottom: 2rem;
+  position: relative;
 }
 .section-title .sub-title {
   font-size: 1.3rem;
@@ -1053,6 +1054,9 @@ button:focus {
 }
 .pop-btn .btn_item.btn_continute {
   background: #1BC5AC;
+}
+.pop-btn .btn_item.btn--red {
+  background: red;
 }
 .pop-btn .btn_item:last-of-type {
   margin-right: 0;
@@ -3741,6 +3745,411 @@ button:focus {
   font-size: 1.1rem;
   color: #5C616F;
   margin-top: 1.1rem;
+}
+.wrapper .box_infoUser {
+  background-color: #1bc5ab;
+  background-image: url("../images/bg_profile.jpg");
+  padding: 1.7rem 0;
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.wrapper .box_infoUser .w-768 {
+  overflow: unset;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+}
+.wrapper .box_infoUser .box_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrapper .box_infoUser .box_wrap .info_detail {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.wrapper .box_infoUser .box_wrap .info_detail .img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 1rem;
+}
+.wrapper .box_infoUser .box_wrap .info_detail .img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.wrapper .box_infoUser .box_wrap .info_detail .txt {
+  color: #fff;
+}
+.wrapper .box_infoUser .box_wrap .info_detail .txt .txt-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.wrapper .box_infoUser .box_wrap .info_detail .txt .txt-phone {
+  font-size: 1.3rem;
+  margin-top: 0.3rem;
+}
+.wrapper .box_infoUser .box_wrap .info_status {
+  background: linear-gradient(66.04deg, #AFFFF2 0%, #FBFFFE 100%);
+  color: #040C22;
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: block;
+}
+.wrapper .box_infoUser .box_wrap .info_status span {
+  display: inline-block;
+  position: relative;
+}
+.wrapper .box_infoUser .box_wrap .info_status-true {
+  border-radius: 100px;
+  padding: 0.8rem 1.1rem;
+}
+.wrapper .box_infoUser .box_wrap .info_status-true span {
+  padding-left: 3rem;
+}
+.wrapper .box_infoUser .box_wrap .info_status-true span::before {
+  content: "";
+  display: block;
+  width: 2.4rem;
+  height: 2.4rem;
+  background-image: url("../images/icon_tick_profile.svg");
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: -0.5rem;
+}
+.wrapper .box_infoUser .box_wrap .info_status-fail {
+  padding: 0.85rem 1.6rem 0.85rem 2.4rem;
+  border-radius: 20px 0px 0px 20px;
+  margin-right: -2.4rem;
+}
+.wrapper .box_infoUser .box_wrap .info_status-fail span {
+  padding-right: 2rem;
+}
+.wrapper .box_infoUser .box_wrap .info_status-fail span::after {
+  content: "";
+  display: block;
+  background-image: url("../images/icon_right_profile.svg");
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: 50%;
+  margin-top: -0.8rem;
+  width: 1.6rem;
+  height: 1.6rem;
+}
+.wrapper .listFunction {
+  margin-top: 1.6rem;
+}
+.wrapper .listFunction .box_wrap .item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1.6rem 0 1.6rem 0;
+  position: relative;
+}
+.wrapper .listFunction .box_wrap .item::after {
+  content: "";
+  display: block;
+  width: calc(100% - 5rem);
+  height: 1px;
+  background: #E8EBEE;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.wrapper .listFunction .box_wrap .item .icon {
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  margin-right: 1rem;
+  min-width: 4rem;
+}
+.wrapper .listFunction .box_wrap .item .txt {
+  display: block;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #040C22;
+  flex: 1;
+  position: relative;
+  padding-right: 2.4rem;
+}
+.wrapper .listFunction .box_wrap .item .txt::after {
+  content: "";
+  display: block;
+  background-image: url("../images/icon_right_profile.svg");
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: 50%;
+  margin-top: -0.8rem;
+  width: 1.6rem;
+  height: 1.6rem;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.wrapper .listFunction .box_wrap .item:first-of-type {
+  padding-top: 0;
+}
+.wrapper .listFunction .box_wrap .item:last-of-type::after {
+  display: none;
+}
+.wrapper .box_infoAcc .box_wrap .section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrapper .box_infoAcc .box_wrap .section-title .btn_edit {
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 0.8rem 1.6rem;
+  background: #1BC5AC;
+  border-radius: 30px;
+  color: #fff;
+  min-width: 9.6rem;
+  text-align: center;
+  display: block;
+}
+.wrapper .box_listRule {
+  padding-bottom: 1.6rem;
+}
+.wrapper .box_listRule .box_wrap .list_prd {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.6rem;
+}
+.wrapper .box_listRule .box_wrap .list_prd .item_prd {
+  border: 1px solid #B3E1DA;
+  border-radius: 12px;
+  background: #fff;
+  padding: 1.1rem 1.2rem 1.1rem;
+  display: flex;
+  align-items: center;
+}
+.wrapper .box_listRule .box_wrap .list_prd .item_prd-ico {
+  width: 4rem;
+  height: 4rem;
+  min-width: 4rem;
+  margin-right: 1.3rem;
+}
+.wrapper .box_listRule .box_wrap .list_prd .item_prd-ico.icon1 {
+  background-image: url("../images/icon_rule1.svg");
+}
+.wrapper .box_listRule .box_wrap .list_prd .item_prd-ico.icon2 {
+  background-image: url("../images/icon_rule2.svg");
+}
+.wrapper .box_listRule .box_wrap .list_prd .item_prd-txt {
+  position: relative;
+  padding-right: 2.6rem;
+  flex: 1;
+}
+.wrapper .box_listRule .box_wrap .list_prd .item_prd-txt .title {
+  font-size: 1.7rem;
+  font-weight: 900;
+  color: #040C22;
+}
+.wrapper .box_listRule .box_wrap .list_prd .item_prd-txt::after {
+  content: "";
+  display: block;
+  background-image: url("../images/icon_arr_right_gray.svg");
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: 50%;
+  margin-top: -0.8rem;
+  width: 1.6rem;
+  height: 1.6rem;
+}
+.wrapper .box_listBank {
+  padding-bottom: 1.6rem;
+}
+.wrapper .box_listBank .box_wrap .section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrapper .box_listBank .box_wrap .section-title .btn_edit {
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 0.8rem 1.6rem;
+  background: #1BC5AC;
+  border-radius: 30px;
+  color: #fff;
+  min-width: 9.6rem;
+  text-align: center;
+  display: block;
+}
+.wrapper .box_listBank .box_wrap .list_prd {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.6rem;
+}
+.wrapper .box_listBank .box_wrap .list_prd .item_prd {
+  border: 1px solid #DEE3E7;
+  border-radius: 12px;
+  background: #fff;
+  padding: 1.1rem 1.2rem 1.1rem;
+  display: flex;
+  align-items: center;
+}
+.wrapper .box_listBank .box_wrap .list_prd .item_prd-ico {
+  width: 4rem;
+  height: 4rem;
+  min-width: 4rem;
+  margin-right: 1.3rem;
+}
+.wrapper .box_listBank .box_wrap .list_prd .item_prd-txt {
+  position: relative;
+  padding-right: 2.6rem;
+  flex: 1;
+}
+.wrapper .box_listBank .box_wrap .list_prd .item_prd-txt .title {
+  font-size: 1.7rem;
+  font-weight: 900;
+  color: #040C22;
+}
+.wrapper .box_listBank .box_wrap .list_prd .item_prd-txt .des {
+  font-size: 1.3rem;
+  color: #5C616F;
+}
+.wrapper .box_listBank .box_wrap .list_prd .item_prd-txt::after {
+  content: "";
+  display: block;
+  background-image: url("../images/icon_arr_right_gray.svg");
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: 50%;
+  margin-top: -0.8rem;
+  width: 1.6rem;
+  height: 1.6rem;
+}
+.wrapper .box_listBank .box_wrap .list_prd .item_prd .txt-status {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1BC5AC;
+  display: none;
+}
+.wrapper .box_listBank .box_wrap .list_prd .item_prd .btn_remove {
+  display: block;
+  width: 2.4rem;
+  height: 2.4rem;
+  background-image: url("../images/icon_delete_red.svg");
+}
+.wrapper .box_listBank .box_wrap .list_prd .item_prd.noArr .item_prd-txt {
+  padding-right: 1rem;
+}
+.wrapper .box_listBank .box_wrap .list_prd .item_prd.noArr .item_prd-txt::after {
+  display: none;
+}
+.wrapper .box_listBank .box_wrap .list_prd .item_prd.active {
+  border: 1px solid #1BC5AC;
+}
+.wrapper .box_listBank .box_wrap .list_prd .item_prd.active .txt-status {
+  display: block;
+}
+.wrapper .box_addBank .box_wrap .box_search {
+  margin-bottom: 2.4rem;
+}
+.wrapper .box_addBank .box_wrap .box_search .form-group {
+  margin-bottom: 0;
+  position: relative;
+}
+.wrapper .box_addBank .box_wrap .box_search .form-group input {
+  background: #F6F7F8;
+  border: 1px solid #DEE3E7;
+  border-radius: 24px;
+  display: block;
+  width: 100%;
+  font-size: 1.3rem;
+  padding: 0.7rem 1.6rem 0.7rem 3.4rem;
+}
+.wrapper .box_addBank .box_wrap .box_search .form-group::before {
+  content: "";
+  display: block;
+  background-image: url("../images/icon_search.svg");
+  position: absolute;
+  z-index: 1;
+  left: 1.2rem;
+  top: 50%;
+  margin-top: -0.8rem;
+  width: 1.6rem;
+  height: 1.6rem;
+}
+.wrapper .box_addBank .box_wrap .list_bank {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+}
+@media only screen and (min-width: 768px) {
+  .wrapper .box_addBank .box_wrap .list_bank {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+.wrapper .box_addBank .box_wrap .list_bank .item {
+  border: 1px solid #E8EBEE;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 1rem 1rem 0.8rem 1rem;
+}
+.wrapper .box_addBank .box_wrap .list_bank .item .item-ico {
+  width: 4rem;
+  height: 3.4rem;
+  margin: auto;
+}
+.wrapper .box_addBank .box_wrap .list_bank .item .item-txt {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-top: 0.2rem;
+}
+.wrapper .box_addBank .box_wrap .infoBank .chooseBank {
+  border: 1px solid #DEE3E7;
+  border-radius: 12px;
+  background: #fff;
+  padding: 1.2rem 1.2rem 1.2rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.wrapper .box_addBank .box_wrap .infoBank .chooseBank .item_prd-ico {
+  width: 4rem;
+  height: 3.4rem;
+  min-width: 4rem;
+  margin-right: 1rem;
+}
+.wrapper .box_addBank .box_wrap .infoBank .chooseBank .item_prd-txt {
+  position: relative;
+  padding-right: 2.6rem;
+  flex: 1;
+}
+.wrapper .box_addBank .box_wrap .infoBank .chooseBank .item_prd-txt .title {
+  font-size: 1.7rem;
+  font-weight: 900;
+  color: #040C22;
+}
+.wrapper .box_addBank .box_wrap .infoBank .form-group .wrap_input .group_gt {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+}
+.wrapper .box_addBank .box_wrap .infoBank .form-group .wrap_input .group_gt .group-cb {
+  margin-right: 3rem;
+}
+.wrapper .box_addBank .box_wrap .infoBank .form-group .wrap_input .group_gt .group-cb label {
+  font-size: 1.5rem;
+}
+.wrapper .box_addBank .box_wrap .infoBank .form-group .wrap_input .group_gt .group-cb:last-of-type {
+  margin-right: 0;
+}
+.wrapper .box_addBank .box_wrap .infoBank .txt_note {
+  color: red;
+  font-size: 1.3rem;
+  margin-top: 2rem;
 }
 .wrapper .nav-menu {
   display: flex;

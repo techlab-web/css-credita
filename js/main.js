@@ -46,10 +46,12 @@ $(document).ready(function () {
     $('.icon_eye').click(function () {
         if ($(this).hasClass('icon_eye_close')) {
             $(this).removeClass('icon_eye_close');
-            $(this).parents('.form-group').find('input[type="text"]').attr('type', 'password');
+            $(this).parents('.form-group-eye').find('input[type="password"]').attr('type', 'text');
+            console.log('show');
         } else {
             $(this).addClass('icon_eye_close');
-            $(this).parents('.form-group').find('input[type="password"]').attr('type', 'text');
+            $(this).parents('.form-group-eye').find('input[type="text"]').attr('type', 'password');
+            console.log('hide');
         }
     });
 

@@ -1141,6 +1141,7 @@ button:focus {
   font-size: 1.7rem;
   font-weight: 900;
   margin-bottom: 2rem;
+  position: relative;
   p{
 
   }
@@ -1149,6 +1150,7 @@ button:focus {
     margin-top: 0.8rem;
     font-weight: 400;
   }
+
   &.fz--24{
     p{
       font-size: 2.4rem;
@@ -1209,6 +1211,9 @@ button:focus {
     }
     &.btn_continute{
       background: $color-green;
+    }
+    &.btn--red{
+      background: red;
     }
     &:last-of-type{
       margin-right: 0;
