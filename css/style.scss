@@ -11,7 +11,7 @@
   min-height: var(--window-height);
   background: #fff;
   @include screen('tablet') {
-    max-width: 76.8rem;
+    max-width: 768px;
     margin: auto;
   }
 
@@ -40,7 +40,13 @@
             padding: 1.6rem;
             .slide_item{
               .icon {
-                height: 22vh;
+                height: calc(var(--window-height) - 36rem - 182px);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                @include screen('tablet'){
+                  height: calc(var(--window-height) / 2  - 182px);
+                }
                 img {
                   max-width: 100%;
                   max-height: 100%;
@@ -99,7 +105,7 @@
       padding: 1.6rem;
       margin-top: 1.6rem;
       height: 36rem;
-      flex: 1;
+      //flex: 1;
       @include screen('tablet'){
         height: calc(var(--window-height) / 2);
         flex: unset;
@@ -319,8 +325,8 @@
       font-weight: 700;
       margin-top: 1.2rem;
       @include screen('tablet'){
-        font-size: 3rem;
-        margin-top: 2.4rem;
+        //font-size: 3rem;
+        //margin-top: 2.4rem;
       }
       span{
         display: block;
@@ -333,8 +339,8 @@
       height: 20.6rem;
       margin: 5rem auto 0;
       @include screen('tablet'){
-        width: 30.6rem;
-        height: 29.6rem;
+        //width: 30.6rem;
+        //height: 29.6rem;
       }
     }
     .loading_ani{
@@ -496,7 +502,7 @@
         grid-template-columns: 1fr;
         gap: 1.6rem;
         @include screen('tablet'){
-          grid-template-columns: 1fr 1fr;
+          //grid-template-columns: 1fr 1fr;
         }
         .item_prd{
           border: 1px solid #B3E1DA;
@@ -599,7 +605,7 @@
         grid-template-columns: 1fr 1fr;
         gap: 0.5rem;
         @include screen('tablet'){
-          gap: 1.6rem
+          //gap: 1.6rem;
         }
         .item{
           text-align: center;
@@ -831,7 +837,7 @@
         grid-template-columns: 1fr;
         gap: 1.6rem;
         @include screen('tablet'){
-          grid-template-columns: 1fr 1fr;
+          //grid-template-columns: 1fr 1fr;
         }
         .item_com{
           border: 1px solid #B3E1DA;
@@ -1026,7 +1032,7 @@
           gap: 0.8rem;
           margin-top: 2.6rem;
           @include screen('tablet'){
-            grid-template-columns: repeat(6, 1fr);
+            //grid-template-columns: repeat(6, 1fr);
           }
           .item{
             display: inline-block;
@@ -1170,8 +1176,8 @@
                 margin-top: 0.5rem;
                 text-align: center;
                 @include screen('tablet'){
-                  font-size: 1.5rem;
-                  margin-top: 0.8rem;
+                  //font-size: 1.5rem;
+                  //margin-top: 0.8rem;
                 }
               }
               &:first-of-type{
@@ -3297,7 +3303,7 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 1.6rem;
         @include screen('tablet'){
-          grid-template-columns: repeat(6, 1fr);
+          grid-template-columns: repeat(4, 1fr);
         }
         .item{
           border: 1px solid #E8EBEE;
@@ -3504,7 +3510,7 @@
     @include screen('tablet'){
       right: auto;
       left: 50%;
-      margin-left: 30.8rem;
+      margin-left: 24.8rem;
     }
   }
 
@@ -3522,9 +3528,9 @@
     box-shadow: 0px -4px 8px rgba(168, 168, 168, 0.05), 0px -1px 0px #EDEDED;
     display: none;
     @include screen('tablet'){
-      width: 76.8rem;
+      width: 768px;
       left: 50%;
-      margin-left: -38.4rem;
+      margin-left: -384px;
     }
     .item{
       display: block;
@@ -3585,9 +3591,9 @@
     padding: 1.2rem 1.6rem;
     display: none;
     @include screen('tablet'){
-      width: 76.8rem;
+      width: 768px;
       left: 50%;
-      margin-left: -38.4rem;
+      margin-left: -384px;
     }
     .btn_loan{
       margin-top: 0;

@@ -51,6 +51,11 @@ html, body {
   color: #040C22;
   background-color: #e5e5e5;
 }
+@media only screen and (min-width: 768px) {
+  html, body {
+    font-size: 75%;
+  }
+}
 
 a, a:hover {
   text-decoration: none !important;
@@ -1175,7 +1180,7 @@ button:focus {
 }
 @media only screen and (min-width: 768px) {
   .wrapper {
-    max-width: 76.8rem;
+    max-width: 768px;
     margin: auto;
   }
 }
@@ -1205,7 +1210,15 @@ button:focus {
   padding: 1.6rem;
 }
 .wrapper .box_intro .box_intro-slide .swiperIntro .swiper-wrapper .swiper-slide .slide_item .icon {
-  height: 22vh;
+  height: calc(var(--window-height) - 36rem - 182px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (min-width: 768px) {
+  .wrapper .box_intro .box_intro-slide .swiperIntro .swiper-wrapper .swiper-slide .slide_item .icon {
+    height: calc(var(--window-height) / 2 - 182px);
+  }
 }
 .wrapper .box_intro .box_intro-slide .swiperIntro .swiper-wrapper .swiper-slide .slide_item .icon img {
   max-width: 100%;
@@ -1254,7 +1267,6 @@ button:focus {
   padding: 1.6rem;
   margin-top: 1.6rem;
   height: 36rem;
-  flex: 1;
 }
 @media only screen and (min-width: 768px) {
   .wrapper .box_intro .box_intro-bottom {
@@ -1479,12 +1491,6 @@ button:focus {
   font-weight: 700;
   margin-top: 1.2rem;
 }
-@media only screen and (min-width: 768px) {
-  .wrapper .box_loading .slg {
-    font-size: 3rem;
-    margin-top: 2.4rem;
-  }
-}
 .wrapper .box_loading .slg span {
   display: block;
 }
@@ -1493,12 +1499,6 @@ button:focus {
   width: 23.6rem;
   height: 20.6rem;
   margin: 5rem auto 0;
-}
-@media only screen and (min-width: 768px) {
-  .wrapper .box_loading .img_intro {
-    width: 30.6rem;
-    height: 29.6rem;
-  }
 }
 .wrapper .box_loading .loading_ani {
   z-index: 1;
@@ -1638,11 +1638,6 @@ button:focus {
   grid-template-columns: 1fr;
   gap: 1.6rem;
 }
-@media only screen and (min-width: 768px) {
-  .wrapper .box_product .box_wrap .list_prd {
-    grid-template-columns: 1fr 1fr;
-  }
-}
 .wrapper .box_product .box_wrap .list_prd .item_prd {
   border: 1px solid #B3E1DA;
   border-radius: 12px;
@@ -1732,11 +1727,6 @@ button:focus {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0.5rem;
-}
-@media only screen and (min-width: 768px) {
-  .wrapper .box_advantage .box_wrap .list_advantage {
-    gap: 1.6rem;
-  }
 }
 .wrapper .box_advantage .box_wrap .list_advantage .item {
   text-align: center;
@@ -1923,11 +1913,6 @@ button:focus {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.6rem;
-}
-@media only screen and (min-width: 768px) {
-  .wrapper .box_chooseCompany .box_wrap .list_company {
-    grid-template-columns: 1fr 1fr;
-  }
 }
 .wrapper .box_chooseCompany .box_wrap .list_company .item_com {
   border: 1px solid #B3E1DA;
@@ -2120,11 +2105,6 @@ button:focus {
   gap: 0.8rem;
   margin-top: 2.6rem;
 }
-@media only screen and (min-width: 768px) {
-  .wrapper .box_loan .box_wrap .form_wrap .group_money .choose_money {
-    grid-template-columns: repeat(6, 1fr);
-  }
-}
 .wrapper .box_loan .box_wrap .form_wrap .group_money .choose_money .item {
   display: inline-block;
   font-size: 1.5rem;
@@ -2257,12 +2237,6 @@ button:focus {
   font-size: 1.1rem;
   margin-top: 0.5rem;
   text-align: center;
-}
-@media only screen and (min-width: 768px) {
-  .wrapper .box_loan .box_wrap .form_wrap .process_loan .process_map .step_item .step_title {
-    font-size: 1.5rem;
-    margin-top: 0.8rem;
-  }
 }
 .wrapper .box_loan .box_wrap .form_wrap .process_loan .process_map .step_item:first-of-type::before {
   display: none;
@@ -4087,7 +4061,7 @@ button:focus {
 }
 @media only screen and (min-width: 768px) {
   .wrapper .box_addBank .box_wrap .list_bank {
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 .wrapper .box_addBank .box_wrap .list_bank .item {
@@ -4269,7 +4243,7 @@ button:focus {
   .wrapper .fix_support {
     right: auto;
     left: 50%;
-    margin-left: 30.8rem;
+    margin-left: 24.8rem;
   }
 }
 .wrapper .nav-menu {
@@ -4288,9 +4262,9 @@ button:focus {
 }
 @media only screen and (min-width: 768px) {
   .wrapper .nav-menu {
-    width: 76.8rem;
+    width: 768px;
     left: 50%;
-    margin-left: -38.4rem;
+    margin-left: -384px;
   }
 }
 .wrapper .nav-menu .item {
@@ -4352,9 +4326,9 @@ button:focus {
 }
 @media only screen and (min-width: 768px) {
   .wrapper .fixBottom {
-    width: 76.8rem;
+    width: 768px;
     left: 50%;
-    margin-left: -38.4rem;
+    margin-left: -384px;
   }
 }
 .wrapper .fixBottom .btn_loan {

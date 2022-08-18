@@ -199,6 +199,9 @@ html, body{
   line-height: 1.4;
   color: $color-main;
   background-color: rgb(229, 229, 229);
+  @include screen('tablet'){
+    font-size: 75%;
+  }
 }
 body{
 
