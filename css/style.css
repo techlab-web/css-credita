@@ -450,7 +450,7 @@ select {
   left: 50%;
 }
 
-.bgContain, .wrapper .nav-menu .item .icon, .wrapper .box_addBank .box_wrap .infoBank .chooseBank .item_prd-ico, .wrapper .box_addBank .box_wrap .list_bank .item .item-ico, .wrapper .box_addBank .box_wrap .box_search .form-group::before, .wrapper .box_listBank .box_wrap .list_prd .item_prd .btn_remove, .wrapper .box_listBank .box_wrap .list_prd .item_prd-txt::after, .wrapper .box_listBank .box_wrap .list_prd .item_prd-ico, .wrapper .box_listRule .box_wrap .list_prd .item_prd-txt::after, .wrapper .box_listRule .box_wrap .list_prd .item_prd-ico, .wrapper .listFunction .box_wrap .item .txt::after, .wrapper .listFunction .box_wrap .item .icon, .wrapper .box_infoUser .box_wrap .info_status-fail span::after, .wrapper .box_infoUser .box_wrap .info_status-true span::before, .wrapper .box_withdraw .box_wrap .chooseBank .group_choose .item .item-icon, .wrapper .box_withdraw .box_wrap .wallet_detail .icon, .wrapper .box_loanDetail .box_wrap .payLoan .group_choose .item .item-icon, .wrapper .box_loanDetail .box_wrap .payNoti .detail-transaction .icon, .wrapper .box_loanDetail .box_wrap .period_pay .item-des::after, .wrapper .box_loanDetail .box_wrap .period_pay .item-title::before, .wrapper .box_loanDetail .box_wrap .loanDetail .title span.hasIco::before, .wrapper .box_loanDetail .box_wrap .link_item .icon, .wrapper .box_loanDetail .box_wrap .link_item::after, .wrapper .box_loanDetail .box_wrap .loan_total--miss .title span::before, .wrapper .pay_succes .box_wrap .img, .wrapper .box_loanPayment .box_wrap .wallet_detail .icon, .wrapper .box_listLoan .box_wrap .group_list .item_loanAmout .title span.hasIco::before, .wrapper .box_noti .box_wrap .noti_item .noti-icon, .wrapper .box_cccd .box_wrap .check_picture .img .icon_noti, .wrapper .box_cccd .box_wrap .benefit_authen .benefit_list .item .icon, .wrapper .box_cccd .box_wrap .benefit_authen .benefit_title span::before, .wrapper .box_cccd .box_wrap .group_picture .picture_item .btn_takePhoto .icon::before, .wrapper .box_cccd .box_wrap .group_picture .picture_item .img_pic, .wrapper .box_cccd .box_wrap .group_picture .picture_item .icon_tick, .wrapper .box_cccd .box_wrap .group-tab-cccd .content_tab .group_upload .upload_item .group_img .icon_tick, .wrapper .box_cccd .box_wrap .group-tab-cccd .content_tab .group_upload .upload_item .group_img .icon_del, .wrapper .box_cccd .box_wrap .group-tab-cccd .content_tab .group_upload .upload_item .takePhoto .icon_plus, .wrapper .box_loan_complete .box_wrap .font_wrap .list_picture .item_pic .btn_del, .wrapper .box_loan .box_wrap .form_wrap .process_loan .process_map .step_item .icon, .wrapper .box_loan .box_wrap .form_wrap .info_detail .info_item .p-title .hasIco::after, .wrapper .box_loan .box_wrap .form_wrap .group_money .group_num .numOther span::before, .wrapper .box_loan .box_wrap .form_wrap .group_money .group_num .numMoney span::before, .wrapper .box_advantage_loan .box_wrap .list_advantage .item .icon, .wrapper .box_chooseCompany .box_wrap .list_company .item_com-txt::after, .wrapper .box_chooseCompany .box_wrap .list_company .item_com-ico, .wrapper .box_home_card .box_wrap .card_option .item::before, .wrapper .box_home_card .box_wrap .card_value .card_value_eye, .wrapper .box_home_card .box_wrap .card_value .icon_d, .wrapper .box_question .box_wrap .group_question .question_item .qs_title::after, .wrapper .box_advantage .box_wrap .list_advantage .item .icon, .wrapper .box_product .box_wrap .list_prd .item_prd-txt::after, .wrapper .box_product .box_wrap .list_prd .item_prd-txt .detail .detail_item .icon, .wrapper .box_product .box_wrap .list_prd .item_prd-ico, .wrapper .box_option .box_wrap .item .icon, .wrapper .box_verify .box_wrap .group_content .icon, .wrapper .header .box_wrap .header-logo, .wrapper .box_loading .img_intro, .wrapper .box_loading .logo_black, .wrapper .box_login .username span::after, .wrapper .box_login .iconapp, .wrapper .box_intro .box_intro-bottom .group_contact .btn_item .icon, .wrapper .box_intro .box_intro-bottom .title .txt_logo, .pop-bg .pop-inner .wallet_detail .icon, .pop-bg .pop-inner .noti_wallet::before, .pop-bg .closeModal, .form-group.form-group-close .icon_close, .form-group.form-group-eye .icon_eye, .form-group.hasVn .wrap_input .icon_vn, .form-group.hasIco .wrap_input::before, .btn--green.hasIco span::before {
+.bgContain, .wrapper .nav-menu .item .icon, .wrapper .fix_support, .wrapper .quesDetail .item .item-title::before, .wrapper .supportCenter .box_wrap .list_contact .item .item-txt .icon, .wrapper .supportCenter .box_wrap .list_ques .item::after, .wrapper .box_addBank .box_wrap .infoBank .chooseBank .item_prd-ico, .wrapper .box_addBank .box_wrap .list_bank .item .item-ico, .wrapper .box_addBank .box_wrap .box_search .form-group::before, .wrapper .box_listBank .box_wrap .list_prd .item_prd .btn_remove, .wrapper .box_listBank .box_wrap .list_prd .item_prd-txt::after, .wrapper .box_listBank .box_wrap .list_prd .item_prd-ico, .wrapper .box_listRule .box_wrap .list_prd .item_prd-txt::after, .wrapper .box_listRule .box_wrap .list_prd .item_prd-ico, .wrapper .listFunction .box_wrap .item .txt::after, .wrapper .listFunction .box_wrap .item .icon, .wrapper .box_infoUser .box_wrap .info_status-fail span::after, .wrapper .box_infoUser .box_wrap .info_status-true span::before, .wrapper .box_withdraw .box_wrap .chooseBank .group_choose .item .item-icon, .wrapper .box_withdraw .box_wrap .wallet_detail .icon, .wrapper .box_loanDetail .box_wrap .payLoan .group_choose .item .item-icon, .wrapper .box_loanDetail .box_wrap .payNoti .detail-transaction .icon, .wrapper .box_loanDetail .box_wrap .period_pay .item-des::after, .wrapper .box_loanDetail .box_wrap .period_pay .item-title::before, .wrapper .box_loanDetail .box_wrap .loanDetail .title span.hasIco::before, .wrapper .box_loanDetail .box_wrap .link_item .icon, .wrapper .box_loanDetail .box_wrap .link_item::after, .wrapper .box_loanDetail .box_wrap .loan_total--miss .title span::before, .wrapper .pay_succes .box_wrap .img, .wrapper .box_loanPayment .box_wrap .wallet_detail .icon, .wrapper .box_listLoan .box_wrap .group_list .item_loanAmout .title span.hasIco::before, .wrapper .box_noti .box_wrap .noti_item .noti-icon, .wrapper .box_cccd .box_wrap .check_picture .img .icon_noti, .wrapper .box_cccd .box_wrap .benefit_authen .benefit_list .item .icon, .wrapper .box_cccd .box_wrap .benefit_authen .benefit_title span::before, .wrapper .box_cccd .box_wrap .group_picture .picture_item .btn_takePhoto .icon::before, .wrapper .box_cccd .box_wrap .group_picture .picture_item .img_pic, .wrapper .box_cccd .box_wrap .group_picture .picture_item .icon_tick, .wrapper .box_cccd .box_wrap .group-tab-cccd .content_tab .group_upload .upload_item .group_img .icon_tick, .wrapper .box_cccd .box_wrap .group-tab-cccd .content_tab .group_upload .upload_item .group_img .icon_del, .wrapper .box_cccd .box_wrap .group-tab-cccd .content_tab .group_upload .upload_item .takePhoto .icon_plus, .wrapper .box_loan_complete .box_wrap .font_wrap .list_picture .item_pic .btn_del, .wrapper .box_loan .box_wrap .form_wrap .process_loan .process_map .step_item .icon, .wrapper .box_loan .box_wrap .form_wrap .info_detail .info_item .p-title .hasIco::after, .wrapper .box_loan .box_wrap .form_wrap .group_money .group_num .numOther span::before, .wrapper .box_loan .box_wrap .form_wrap .group_money .group_num .numMoney span::before, .wrapper .box_advantage_loan .box_wrap .list_advantage .item .icon, .wrapper .box_chooseCompany .box_wrap .list_company .item_com-txt::after, .wrapper .box_chooseCompany .box_wrap .list_company .item_com-ico, .wrapper .box_home_card .box_wrap .card_option .item::before, .wrapper .box_home_card .box_wrap .card_value .card_value_eye, .wrapper .box_home_card .box_wrap .card_value .icon_d, .wrapper .box_question .box_wrap .group_question .question_item .qs_title::after, .wrapper .box_advantage .box_wrap .list_advantage .item .icon, .wrapper .box_product .box_wrap .list_prd .item_prd-txt::after, .wrapper .box_product .box_wrap .list_prd .item_prd-txt .detail .detail_item .icon, .wrapper .box_product .box_wrap .list_prd .item_prd-ico, .wrapper .box_option .box_wrap .item .icon, .wrapper .box_verify .box_wrap .group_content .icon, .wrapper .header .box_wrap .header-logo, .wrapper .box_loading .img_intro, .wrapper .box_loading .logo_black, .wrapper .box_login .username span::after, .wrapper .box_login .iconapp, .wrapper .box_intro .box_intro-bottom .group_contact .btn_item .icon, .wrapper .box_intro .box_intro-bottom .title .txt_logo, .pop-bg .pop-inner .wallet_detail .icon, .pop-bg .pop-inner .noti_wallet::before, .pop-bg .closeModal, .form-group.form-group-close .icon_close, .form-group.form-group-eye .icon_eye, .form-group.hasVn .wrap_input .icon_vn, .form-group.hasIco .wrap_input::before, .btn--green.hasIco span::before {
   -webkit-background-size: contain;
   background-size: contain;
   background-repeat: no-repeat;
@@ -4150,6 +4150,127 @@ button:focus {
   color: red;
   font-size: 1.3rem;
   margin-top: 2rem;
+}
+.wrapper .supportCenter .box_wrap .title-small {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.6rem;
+}
+.wrapper .supportCenter .box_wrap .title-small p {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+.wrapper .supportCenter .box_wrap .title-small .viewAll {
+  display: block;
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: #1BC5AC;
+}
+.wrapper .supportCenter .box_wrap .list_ques {
+  margin-bottom: 3rem;
+}
+.wrapper .supportCenter .box_wrap .list_ques .item {
+  font-size: 1.5rem;
+  color: #040C22;
+  padding: 1.3rem 3.6rem 1.3rem 1.3rem;
+  border: 1px solid #DEE3E7;
+  border-radius: 10px;
+  display: block;
+  position: relative;
+  margin-bottom: 1.2rem;
+}
+.wrapper .supportCenter .box_wrap .list_ques .item::after {
+  content: "";
+  display: block;
+  background-image: url("../images/icon_arr_right_gray.svg");
+  position: absolute;
+  z-index: 1;
+  right: 1.2rem;
+  top: 50%;
+  margin-top: -0.8rem;
+  width: 1.6rem;
+  height: 1.6rem;
+}
+.wrapper .supportCenter .box_wrap .list_ques .item:last-of-type {
+  margin-bottom: 0;
+}
+.wrapper .supportCenter .box_wrap .list_contact .item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.1rem 0;
+  border-bottom: 1px solid #E8EBEE;
+}
+.wrapper .supportCenter .box_wrap .list_contact .item .item-txt {
+  font-size: 1.5rem;
+  padding-left: 4rem;
+  position: relative;
+}
+.wrapper .supportCenter .box_wrap .list_contact .item .item-txt .icon {
+  width: 3.2rem;
+  height: 3.2rem;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -1.6rem;
+}
+.wrapper .supportCenter .box_wrap .list_contact .item .item-value {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #040C22;
+}
+.wrapper .supportCenter .box_wrap .list_contact .item:first-of-type {
+  padding-top: 0.6rem;
+}
+.wrapper .supportCenter .box_wrap .list_contact .item:last-of-type {
+  border-bottom: 0;
+}
+.wrapper .quesDetail .item {
+  background: #F0FCFA;
+  border: 1px solid #D3F6F1;
+  border-radius: 10px;
+  padding: 1.2rem 1.6rem 1.6rem 4.6rem;
+  margin-bottom: 1.2rem;
+}
+.wrapper .quesDetail .item .item-title {
+  font-size: 1.5rem;
+  font-weight: 900;
+  position: relative;
+}
+.wrapper .quesDetail .item .item-title::before {
+  content: "";
+  display: block;
+  background-image: url("../images/icon_question_green.svg");
+  position: absolute;
+  z-index: 1;
+  left: -3.2rem;
+  top: 0;
+  width: 2.2rem;
+  height: 2.2rem;
+}
+.wrapper .quesDetail .item .item-des {
+  font-size: 1.3rem;
+  margin-top: 1.4rem;
+}
+.wrapper .quesDetail .item:last-of-type {
+  margin-bottom: 0;
+}
+.wrapper .fix_support {
+  width: 6.4rem;
+  height: 6.4rem;
+  background-image: url("../images/icon_support.svg");
+  position: fixed;
+  z-index: 50;
+  bottom: 1rem;
+  right: 1rem;
+}
+@media only screen and (min-width: 768px) {
+  .wrapper .fix_support {
+    right: auto;
+    left: 50%;
+    margin-left: 30.8rem;
+  }
 }
 .wrapper .nav-menu {
   display: flex;
