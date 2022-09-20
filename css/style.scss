@@ -3496,6 +3496,136 @@
       }
     }
   }
+  .box_recharge{
+    .box_wrap{
+      .section-title{
+        p{
+
+        }
+        .sub-title{
+          font-size: 1.5rem;
+          margin-top: 1.6rem;
+        }
+      }
+      .h2_title{
+        margin-top: 1.2rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
+      .list_bank{
+        margin-top: 2rem;
+        display: flex;
+        overflow-x: auto;
+        overflow-y: auto;
+        &::-webkit-scrollbar{
+          display: none;
+        }
+        .item{
+          display: inline-block;
+          margin-right: 1.2rem;
+          background: #FFFFFF;
+          border: 1px solid #DEE3E7;
+          border-radius: 1rem;
+          padding: 0.8rem;
+          min-width: 9rem;
+          img{
+            display: block;
+            margin: auto;
+            max-height: 3.9rem;
+            max-width: 7rem;
+            object-fit: contain;
+          }
+          .name{
+            font-size: 1.5rem;
+            color: $color-main;
+            margin-top: 0.5rem;
+            display: block;
+            text-align: center;
+          }
+          &.active{
+            background: #F0FCFA;
+            border: 1.5px solid #1BC5AC;
+            img{
+
+            }
+            .name{
+              font-weight: 600;
+            }
+          }
+          &:last-of-type{
+            margin-right: 0;
+          }
+        }
+      }
+      .transfer_item{
+        padding: 1.4rem 1.4rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #F6F7F8;
+        border-radius: 10px;
+        border: 1px solid #CDD4DB;
+        .group_txt{
+          .label{
+            font-size: 1.1rem;
+            color: $color-extra;
+          }
+          .txt_content{
+            font-size: 1.5rem;
+            margin-top: 0.4rem;
+            .icon_d{
+              display: block;
+              position: relative;
+              padding-left: 2.2rem;
+              &::before{
+                @extend .bgContain;
+                content: '';
+                display: block;
+                width: 1.6rem;
+                height: 1.6rem;
+                background-image: url("../images/icon_d_black_line.svg");
+                position: absolute;
+                left: 0;
+                top: 50%;
+                margin-top: -0.8rem;
+              }
+            }
+          }
+        }
+        .btn_copy{
+          display: block;
+          white-space: nowrap;
+          font-size: 1.3rem;
+          font-weight: 600;
+          color: $color-green;
+          padding: 1.2rem 1.7rem;
+          border: 1px solid #1BC5AC;
+          border-radius: 10px;
+          background: #fff;
+          margin-left: 1rem;
+        }
+        &.transfer_content{
+          background: #F0FCFA;
+          border: 1px dashed #1BC5AC;
+          margin-top: 2.6rem;
+        }
+        &.transfer_number{
+          margin-top: 1.8rem;
+          background: #FFFFFF;
+          border: 1px solid #CDD4DB;
+          border-radius: 10px 10px 0px 0px;
+        }
+        &.transfer_name{
+          border-radius: 0 0 10px 10px;
+          border: 1px solid #CDD4DB;
+          border-top: 0;
+        }
+        &.transfer_money{
+          margin-top: 1.8rem;
+        }
+      }
+    }
+  }
 
 
   .fix_support{
@@ -3628,6 +3758,14 @@
     }
     &.active{
       display: block;
+      &.displayGrid--2{
+        display: grid;
+        grid-template-columns: 0.3fr 1fr;
+        gap: 1rem;
+        .btn--gray{
+          background: #CDD4DB;
+        }
+      }
     }
   }
   &.hasMenu{
