@@ -3660,6 +3660,8 @@
           }
           &-right{
             text-align: right;
+            white-space: nowrap;
+            margin-left: 1.6rem;
             .txt_value{
               color: $color-main;
               font-size: 1.5rem;

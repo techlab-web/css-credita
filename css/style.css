@@ -4370,6 +4370,8 @@ button:focus {
 }
 .wrapper .box_history .box_wrap .list_history .item-right {
   text-align: right;
+  white-space: nowrap;
+  margin-left: 1.6rem;
 }
 .wrapper .box_history .box_wrap .list_history .item-right .txt_value {
   color: #040C22;
