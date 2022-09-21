@@ -4345,6 +4345,57 @@ button:focus {
 .wrapper .box_recharge .box_wrap .transfer_item.transfer_money {
   margin-top: 1.8rem;
 }
+.wrapper .box_history .box_wrap .list_history {
+  background: #FFFFFF;
+  border: 1px solid #E8EBEE;
+  border-radius: 10px;
+  padding: 2rem 1.6rem;
+}
+.wrapper .box_history .box_wrap .list_history .item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #E8EBEE;
+  padding: 1.2rem 0;
+}
+.wrapper .box_history .box_wrap .list_history .item-left .txt_title {
+  color: #040C22;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.wrapper .box_history .box_wrap .list_history .item-left .txt_date {
+  font-size: 1.3rem;
+  color: #5C616F;
+  margin-top: 0.2rem;
+}
+.wrapper .box_history .box_wrap .list_history .item-right {
+  text-align: right;
+}
+.wrapper .box_history .box_wrap .list_history .item-right .txt_value {
+  color: #040C22;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.wrapper .box_history .box_wrap .list_history .item-right .txt_status {
+  font-size: 1.3rem;
+  margin-top: 0.2rem;
+}
+.wrapper .box_history .box_wrap .list_history .item-right .txt_status.color--yellow {
+  color: #FB9D10;
+}
+.wrapper .box_history .box_wrap .list_history .item-right .txt_status.color--green {
+  color: #1BC5AC;
+}
+.wrapper .box_history .box_wrap .list_history .item-right .txt_status.color--red {
+  color: red;
+}
+.wrapper .box_history .box_wrap .list_history .item:first-of-type {
+  padding-top: 0;
+}
+.wrapper .box_history .box_wrap .list_history .item:last-of-type {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
 .wrapper .fix_support {
   width: 6.4rem;
   height: 6.4rem;

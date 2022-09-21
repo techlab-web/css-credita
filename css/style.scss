@@ -3627,6 +3627,70 @@
     }
   }
 
+  .box_history{
+    .box_wrap{
+      .section-title{
+
+      }
+      .group_filter{
+
+      }
+      .list_history{
+        background: #FFFFFF;
+        border: 1px solid #E8EBEE;
+        border-radius: 10px;
+        padding: 2rem 1.6rem;
+        .item{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border-bottom: 1px solid #E8EBEE;
+          padding: 1.2rem 0;
+          &-left{
+            .txt_title{
+              color: $color-main;
+              font-size: 1.5rem;
+              font-weight: 600;
+            }
+            .txt_date{
+              font-size: 1.3rem;
+              color: $color-extra;
+              margin-top: 0.2rem;
+            }
+          }
+          &-right{
+            text-align: right;
+            .txt_value{
+              color: $color-main;
+              font-size: 1.5rem;
+              font-weight: 600;
+            }
+            .txt_status{
+              font-size: 1.3rem;
+              margin-top: 0.2rem;
+              &.color--yellow{
+                color: #FB9D10;
+              }
+              &.color--green{
+                color: $color-green;
+              }
+              &.color--red{
+                color: red;
+              }
+            }
+          }
+          &:first-of-type{
+            padding-top: 0;
+          }
+          &:last-of-type{
+            padding-bottom: 0;
+            border-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+
 
   .fix_support{
     @extend .bgContain;
