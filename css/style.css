@@ -1201,6 +1201,11 @@ button:focus {
     height: calc(var(--window-height) / 2);
   }
 }
+@media screen and (max-height: 620px) {
+  .wrapper .box_intro .box_intro-slide {
+    height: calc(var(--window-height) - 31.5rem);
+  }
+}
 .wrapper .box_intro .box_intro-slide .swiperIntro .swiper-wrapper {
   height: auto;
 }
@@ -1220,6 +1225,11 @@ button:focus {
     height: calc(var(--window-height) / 2 - 182px);
   }
 }
+@media screen and (max-height: 620px) {
+  .wrapper .box_intro .box_intro-slide .swiperIntro .swiper-wrapper .swiper-slide .slide_item .icon {
+    height: calc(var(--window-height) - 31rem - 150px);
+  }
+}
 .wrapper .box_intro .box_intro-slide .swiperIntro .swiper-wrapper .swiper-slide .slide_item .icon img {
   max-width: 100%;
   max-height: 100%;
@@ -1232,11 +1242,21 @@ button:focus {
   font-weight: 900;
   margin-top: 1.3rem;
 }
+@media screen and (max-height: 620px) {
+  .wrapper .box_intro .box_intro-slide .swiperIntro .swiper-wrapper .swiper-slide .slide_item .title {
+    font-size: 1.8rem;
+  }
+}
 .wrapper .box_intro .box_intro-slide .swiperIntro .swiper-wrapper .swiper-slide .slide_item .info {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 1.5rem;
+}
+@media screen and (max-height: 620px) {
+  .wrapper .box_intro .box_intro-slide .swiperIntro .swiper-wrapper .swiper-slide .slide_item .info {
+    margin-top: 1rem;
+  }
 }
 .wrapper .box_intro .box_intro-slide .swiperIntro .swiper-wrapper .swiper-slide .slide_item .info .info_item {
   margin-right: 2rem;
@@ -1275,10 +1295,20 @@ button:focus {
     padding: 3rem;
   }
 }
+@media screen and (max-height: 620px) {
+  .wrapper .box_intro .box_intro-bottom {
+    height: 31rem;
+  }
+}
 .wrapper .box_intro .box_intro-bottom .title {
   color: #040C22;
   font-weight: 900;
   font-size: 2.4rem;
+}
+@media screen and (max-height: 620px) {
+  .wrapper .box_intro .box_intro-bottom .title {
+    font-size: 2rem;
+  }
 }
 .wrapper .box_intro .box_intro-bottom .title .txt_logo {
   background-image: url("../images/creadita.svg");
@@ -1286,6 +1316,11 @@ button:focus {
   margin: 0.8rem auto 0;
   width: 14.7rem;
   height: 3.1rem;
+}
+@media screen and (max-height: 620px) {
+  .wrapper .box_intro .box_intro-bottom .title .txt_logo {
+    height: 2.4rem;
+  }
 }
 .wrapper .box_intro .box_intro-bottom .btn_register {
   background: #1BC5AC;
@@ -1306,9 +1341,20 @@ button:focus {
 .wrapper .box_intro .box_intro-bottom .btn_register.visited {
   color: white;
 }
+@media screen and (max-height: 620px) {
+  .wrapper .box_intro .box_intro-bottom .btn_register {
+    height: 4rem;
+    line-height: 4rem;
+  }
+}
 .wrapper .box_intro .box_intro-bottom .txt_choose {
   position: relative;
   margin-top: 2rem;
+}
+@media screen and (max-height: 620px) {
+  .wrapper .box_intro .box_intro-bottom .txt_choose {
+    margin-top: 1.2rem;
+  }
 }
 .wrapper .box_intro .box_intro-bottom .txt_choose::after {
   content: "";
@@ -1349,6 +1395,13 @@ button:focus {
   border: 1px solid #1BC5AC;
   display: block;
 }
+@media screen and (max-height: 620px) {
+  .wrapper .box_intro .box_intro-bottom .btn_login {
+    height: 4rem;
+    line-height: 4rem;
+    margin-top: 1.2rem;
+  }
+}
 .wrapper .box_intro .box_intro-bottom .group_contact {
   margin-top: 2rem;
 }
@@ -1377,11 +1430,32 @@ button:focus {
 .wrapper .box_intro .box_intro-bottom .form_login {
   padding: 0.8rem 0 0;
 }
+@media screen and (max-height: 620px) {
+  .wrapper .box_intro .box_intro-bottom .form_login {
+    padding-top: 0;
+  }
+}
 .wrapper .box_intro .box_intro-bottom .form_login .title_login {
   font-size: 2.4rem;
   font-weight: 900;
   text-align: center;
   margin-bottom: 1.6rem;
+}
+@media screen and (max-height: 620px) {
+  .wrapper .box_intro .box_intro-bottom .form_login .title_login {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (max-height: 620px) {
+  .wrapper .box_intro .box_intro-bottom .form_login .form-group .wrap_input {
+    height: 4.6rem;
+  }
+}
+@media screen and (max-height: 620px) {
+  .wrapper .box_intro .box_intro-bottom .form_login .form-group.form-group-eye .icon_eye {
+    top: 1.8rem;
+  }
 }
 .wrapper .box_intro .box_intro-bottom .form_login .btn_login {
   background: #1BC5AC;
@@ -1402,6 +1476,11 @@ button:focus {
 }
 .wrapper .box_intro .box_intro-bottom .form_login .btn_login.visited {
   color: white;
+}
+@media screen and (max-height: 620px) {
+  .wrapper .box_intro .box_intro-bottom .form_login .btn_login {
+    margin-top: 1.6rem;
+  }
 }
 .wrapper .form_full {
   width: var(--window-width);

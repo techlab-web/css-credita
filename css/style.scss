@@ -29,6 +29,9 @@
       @include screen('tablet'){
         height: calc(var(--window-height) / 2);
       }
+      @media screen and (max-height: 620px){
+        height: calc(var(--window-height) - 31.5rem);
+      }
 
       .swiperIntro {
         .swiper-wrapper {
@@ -47,6 +50,9 @@
                 @include screen('tablet'){
                   height: calc(var(--window-height) / 2  - 182px);
                 }
+                @media screen and (max-height: 620px){
+                  height: calc(var(--window-height) - 31rem - 150px);
+                }
                 img {
                   max-width: 100%;
                   max-height: 100%;
@@ -60,6 +66,9 @@
                 font-size: 2.2rem;
                 font-weight: 900;
                 margin-top: 1.3rem;
+                @media screen and (max-height: 620px){
+                  font-size: 1.8rem;
+                }
               }
 
               .info {
@@ -67,6 +76,9 @@
                 justify-content: center;
                 align-items: center;
                 margin-top: 1.5rem;
+                @media screen and (max-height: 620px){
+                  margin-top: 1rem;
+                }
                 .info_item {
                   margin-right: 2rem;
                   display: flex;
@@ -111,11 +123,17 @@
         flex: unset;
         padding: 3rem;
       }
+      @media screen and (max-height: 620px){
+        height: 31rem;
+      }
 
       .title {
         color: $color-main;
         font-weight: 900;
         font-size: 2.4rem;
+        @media screen and (max-height: 620px){
+          font-size: 2rem;
+        }
 
         .txt_logo {
           @extend .bgContain;
@@ -124,6 +142,9 @@
           margin: 0.8rem auto 0;
           width: 14.7rem;
           height: 3.1rem;
+          @media screen and (max-height: 620px){
+            height: 2.4rem;
+          }
         }
       }
 
@@ -131,11 +152,18 @@
         @include btn--style(4.4rem, $color-green);
         display: block;
         margin-top: 2rem;
+        @media screen and (max-height: 620px){
+          height: 4rem;
+          line-height: 4rem;
+        }
       }
 
       .txt_choose {
         position: relative;
         margin-top: 2rem;
+        @media screen and (max-height: 620px){
+          margin-top: 1.2rem;
+        }
 
         &::after {
           content: '';
@@ -166,6 +194,11 @@
         margin-top: 2rem;
         @include btn--styleBorder(4.4rem, white, $color-green, 1px);
         display: block;
+        @media screen and (max-height: 620px){
+          height: 4rem;
+          line-height: 4rem;
+          margin-top: 1.2rem;
+        }
       }
 
       .group_contact {
@@ -202,17 +235,43 @@
 
       .form_login{
         padding: 0.8rem 0 0;
+        @media screen and (max-height: 620px){
+          padding-top: 0;
+        }
         .title_login{
           font-size: 2.4rem;
           font-weight: 900;
           text-align: center;
           margin-bottom: 1.6rem;
+          @media screen and (max-height: 620px){
+            font-size: 2rem;
+            margin-bottom: 1rem;
+          }
+        }
+        .form-group{
+          .wrap_input{
+            @media screen and (max-height: 620px){
+              height: 4.6rem;
+            }
+
+
+          }
+          &.form-group-eye{
+            .icon_eye{
+              @media screen and (max-height: 620px){
+                top: 1.8rem;
+              }
+            }
+          }
         }
         .btn_login{
           @include btn--style(4.4rem, $color-green);
           display: block;
           margin-top: 2rem;
           width: 100%;
+          @media screen and (max-height: 620px){
+            margin-top: 1.6rem;
+          }
         }
         .forgot_pw{
 
